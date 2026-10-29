@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<!-- BASE:START (managed by Coding Agent — do not edit) -->
+<base href="/kongsila-website/">
+<!-- BASE:END -->
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Plus+Jakarta+Sans:wght@400;600;700&family=Noto+Sans+SC:wght@400;700;900&display=swap" rel="stylesheet">
+
+
+<!-- SEO Meta Tags -->
+<title>Kongsi.la · Happy? Let's Kongsi!</title>
+<meta name="description" content="Let your customers post for your shop · 让顾客帮你的店发帖 · Biar customer post untuk kedai anda" />
+<meta property="og:title" content="Kongsi.la · Happy? Let's Kongsi!" />
+<meta property="og:description" content="Let your customers post for your shop · 让顾客帮你的店发帖 · Biar customer post untuk kedai anda" />
+<meta property="og:image" content="https://my.chatbees.io/objects/quick-uploads/972/a8ffb7992ce686cd.jpg" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Kongsi.la · Happy? Let's Kongsi!" />
+<meta name="twitter:description" content="Let your customers post for your shop · 让顾客帮你的店发帖 · Biar customer post untuk kedai anda" />
+<meta name="twitter:image" content="https://my.chatbees.io/objects/quick-uploads/972/a8ffb7992ce686cd.jpg" />
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48" href="/kongsila-website/favicon.ico" />
+<link rel="icon" type="image/png" sizes="192x192" href="/kongsila-website/favicon.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/kongsila-website/apple-touch-icon.png" />
+<!-- End SEO Meta Tags -->
+<meta name="sheet-data-url" content="https://my.chatbees.io/api/public/landing-pages/8525/sheet-data">
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mvm49hq3-7jt8q";
+  var SITEK="";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  function siteTok(){try{return SITEK?localStorage.getItem(SITEK):null;}catch(e){return null;}}
+  var u=new URL(location.href);var found=null;var changed=false;
+  var PINP=true;
+  if(!PINP){try{localStorage.removeItem('lp_pin_'+slug);if(SITEK)localStorage.removeItem(SITEK);}catch(e){}}
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{if(PINP||p!=='pin_access_token'){localStorage.setItem(map[p]+slug,v);if(SITEK&&p==='pin_access_token')localStorage.setItem(SITEK,v);}}catch(e){}if(p==='pin_access_token'){try{sessionStorage.setItem('lp_fresh_'+slug,'1');}catch(e){}}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://my.chatbees.io/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=8525');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='ZqMnJUJW6u';
+  var apiBase='https://my.chatbees.io';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    var phone=findPhone();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,phone:phone||'',amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var sidP=urlParams.get('session_id');
+      if(sidP){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidP})}).catch(function(){});}catch(e){}}
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;background:color-mix(in srgb,'+successBtnColor+' 12%,white);margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="'+successBtnColor+'" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-cart>
+(function(){
+  var slug='ZqMnJUJW6u';
+  var apiBase='https://my.chatbees.io';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findCartEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realCart=function(arg){
+    var items, email='', customerName='', successUrl, cancelUrl, currency;
+    if(Array.isArray(arg)){items=arg;}
+    else if(arg&&typeof arg==='object'){
+      items=arg.items;email=arg.email||'';customerName=arg.name||arg.customerName||'';
+      successUrl=arg.successUrl;cancelUrl=arg.cancelUrl;currency=arg.currency;
+    }
+    if(!Array.isArray(items)||items.length===0){alert('No items in cart.');return Promise.reject('no_items');}
+    var cleanItems=[];var totalCents=0;
+    for(var i=0;i<items.length;i++){
+      var it=items[i];if(!it||typeof it!=='object'){alert('Invalid item at position '+i);return Promise.reject('bad_item');}
+      var nm=typeof it.name==='string'?it.name.trim():'';
+      if(!nm){alert('Item '+(i+1)+' is missing a name.');return Promise.reject('no_name');}
+      var amt=typeof it.amountCents==='number'?it.amountCents:(typeof it.amount==='number'?Math.round(it.amount*100):NaN);
+      if(!isFinite(amt)||amt<1){alert('Item "'+nm+'" needs a valid amount in cents.');return Promise.reject('bad_amount');}
+      var qty=(typeof it.quantity==='number'&&it.quantity>0)?Math.floor(it.quantity):1;
+      cleanItems.push({name:nm,description:it.description||'',amountCents:amt,quantity:qty});
+      totalCents+=amt*qty;
+    }
+    if(totalCents<50){alert('Cart total must be at least $0.50');return Promise.reject('total_too_low');}
+    if(!email)email=findCartEmail();
+    if(!customerName)customerName=findCartName();
+    var cartPhone=findCartPhone();
+    if(!email){var p=window.prompt('Enter your email for the receipt:','');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert('An email address is required to complete checkout.');return Promise.reject('no_email');}}
+    var successBase=window.location.href.split('?')[0];
+    var body={email:email,name:customerName,items:cleanItems,locale:(document.documentElement.lang||navigator.language||'en')};
+    if(currency)body.currency=currency;
+    if(cartPhone)body.phone=cartPhone;
+    body.successUrl=successUrl||(successBase+'?cart=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}');
+    body.cancelUrl=cancelUrl||(successBase+'?cart=cancelled');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/cart/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body)
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process checkout');throw new Error(d.error);}
+    });
+  };
+  try{Object.defineProperty(window,'__processCart',{value:__realCart,writable:false,configurable:false});}catch(e){window.__processCart=__realCart;}
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('cart')==='success'){
+      var sidC=urlParams.get('session_id');
+      if(sidC){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidC})}).catch(function(){});}catch(e){}}
+      if(document.getElementById('payment-success-overlay')||document.getElementById('donation-success-overlay')||document.getElementById('cart-success-overlay'))return;
+      var overlay=document.createElement('div');overlay.id='cart-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||'Thank you for your order.';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;background:color-mix(in srgb,'+successBtnColor+' 12%,white);margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="'+successBtnColor+'" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var cBtn=document.getElementById('lp-cart-success-btn');
+      if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav" aria-label="main">
+  <div class="wrap">
+    <a class="logo" href="#top">Kongsi<span>.la</span></a>
+    <ul>
+      <li><a href="#how" data-i18n="nav_how"></a></li>
+      <li><a href="#board" data-i18n="nav_board"></a></li>
+      <li><a href="#game" data-i18n="nav_game"></a></li>
+      <li><a href="#plans" data-i18n="nav_plans"></a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <div class="nav-r">
+      <div class="lang" role="group" aria-label="Language"><button data-lang="zh" aria-pressed="true">中</button><button data-lang="en" aria-pressed="false">EN</button><button data-lang="bm" aria-pressed="false">BM</button></div>
+      <a class="btn btn-red btn-top" href="#plans" data-i18n="nav_cta"></a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mnav" id="mnav">
+  <a href="#how" data-i18n="nav_how"></a><a href="#board" data-i18n="nav_board"></a><a href="#game" data-i18n="nav_game"></a><a href="#plans" data-i18n="nav_plans"></a><a href="#faq">FAQ</a>
+  <a class="btn btn-red" href="#plans" data-i18n="nav_cta"></a>
+</div>
+
+<header class="hero" id="top">
+  <video autoplay muted loop playsinline poster="https://my.chatbees.io/objects/quick-uploads/972/a8ffb7992ce686cd.jpg">
+    <source src="https://my.chatbees.io/objects/generated-videos/972/1792828759107-509d1c318e080f43.mp4" type="video/mp4">
+  </video>
+  <div class="wrap">
+    <div>
+      <span class="tag" data-i18n="hero_tag"></span>
+      <h1 style="margin-top:18px"><span class="l1" data-i18n="hero_l1"></span><span class="l2" data-i18n="hero_l2"></span></h1>
+      <p class="sub" data-i18n-html="hero_sub"></p>
+      <div class="ctas">
+        <a class="btn btn-red" href="#plans" data-i18n="hero_cta1"></a>
+        <a class="btn btn-ghost" href="https://my.chatbees.io/p/8h33ALmc3" target="_blank" rel="noopener" data-i18n="hero_cta2"></a>
+      </div>
+    </div>
+    <div class="stickers" aria-hidden="true">
+      <div class="sticker" style="top:6%;left:8%;--rot:-6deg"><i>📕</i>小红书</div>
+      <div class="sticker" style="top:22%;right:6%;--rot:5deg"><i>🍋</i>Lemon8</div>
+      <div class="sticker" style="top:46%;left:18%;--rot:3deg"><i>🎵</i>TikTok</div>
+      <div class="sticker" style="top:62%;right:14%;--rot:-4deg"><i>📸</i>Instagram</div>
+      <div class="sticker" style="top:82%;left:36%;--rot:6deg"><i>📘</i>Facebook</div>
+      <div class="sticker" style="top:0;right:30%;--rot:8deg;background:var(--red);color:#fff"><i>🎁</i><span data-i18n="hero_voucher"></span></div>
+    </div>
+  </div>
+  <div class="hero-ticker" aria-hidden="true"><div class="ticker-track" id="ticker"></div></div>
+</header>
+
+<section class="how" id="how">
+  <div class="wrap">
+    <h2 class="reveal" data-i18n="how_h"></h2>
+    <p class="sub reveal" data-i18n="how_sub"></p>
+    <div class="steps">
+      <div class="step reveal"><span class="n">1</span>
+        <svg class="ico" viewBox="0 0 96 96" fill="none"><rect x="26" y="8" width="44" height="80" rx="10" stroke="#02271F" stroke-width="4" fill="#FCD094"/><rect x="34" y="22" width="28" height="28" rx="4" fill="#02271F"/><rect x="40" y="28" width="6" height="6" fill="#F9E9D2"/><rect x="50" y="28" width="6" height="6" fill="#F9E9D2"/><rect x="40" y="38" width="6" height="6" fill="#F9E9D2"/><rect x="50" y="38" width="4" height="4" fill="#F9E9D2"/><rect class="beam" x="20" y="34" width="56" height="4" rx="2" fill="#DB2319"/><circle cx="48" cy="76" r="4" fill="#02271F"/></svg>
+        <h3 data-i18n="s1_h"></h3><p data-i18n="s1_p"></p></div>
+      <div class="step reveal"><span class="n">2</span>
+        <svg class="ico" viewBox="0 0 96 96" fill="none"><rect x="12" y="16" width="72" height="64" rx="10" fill="#FFFDF9" stroke="#02271F" stroke-width="4"/><path class="line" d="M24 38h48M24 50h40M24 62h30" stroke="#FC593F" stroke-width="4" stroke-linecap="round"/><g class="pen"><path d="M30 70l10-10 6 6-10 10z" fill="#E8751E" stroke="#02271F" stroke-width="3" stroke-linejoin="round"/><path d="M40 60l4-4 6 6-4 4" fill="#02271F"/></g></svg>
+        <h3 data-i18n="s2_h"></h3><p data-i18n="s2_p"></p></div>
+      <div class="step reveal"><span class="n">3</span>
+        <svg class="ico" viewBox="0 0 96 96" fill="none"><rect x="18" y="44" width="60" height="40" rx="8" fill="#FC593F" stroke="#02271F" stroke-width="4"/><rect x="44" y="44" width="8" height="40" fill="#02271F"/><g class="lid"><rect x="12" y="32" width="72" height="16" rx="6" fill="#DB2319" stroke="#02271F" stroke-width="4"/><rect x="44" y="32" width="8" height="16" fill="#02271F"/></g><path class="heart" d="M48 34c-4-8-16-6-16 2 0 7 10 12 16 18 6-6 16-11 16-18 0-8-12-10-16-2z" fill="#FC593F" stroke="#02271F" stroke-width="3"/></svg>
+        <h3 data-i18n="s3_h"></h3><p data-i18n="s3_p"></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="board" id="board">
+  <div class="wrap">
+    <div class="board-head">
+      <div>
+        <h2 class="reveal">🏆 Kongsi Podium</h2>
+        <p class="sub reveal" data-i18n="board_sub"></p>
+      </div>
+      <div class="season reveal">
+        <div class="lbl" data-i18n="season_lbl"></div>
+        <div class="big" id="seasonName">2026 Q4</div>
+        <div class="cd" id="cd"></div>
+      </div>
+    </div>
+    <div class="founding" id="foundingNote">🌱 <div data-i18n-html="founding"></div></div>
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div class="podium" id="podium">
+      <div class="pod p2"><div class="who"><div class="avatar">2</div><div class="name">—</div><div class="score">—</div></div><div class="block">2</div></div>
+      <div class="pod p1"><div class="who"><div class="crown">👑</div><div class="avatar">1</div><div class="name">—</div><div class="score">—</div></div><div class="block">1</div></div>
+      <div class="pod p3"><div class="who"><div class="avatar">3</div><div class="name">—</div><div class="score">—</div></div><div class="block">3</div></div>
+    </div>
+    <ol class="ranklist" id="ranklist"></ol>
+    <div class="board-foot">
+      <div class="prizes reveal">
+        <h3 data-i18n="prizes_h"></h3>
+        <table id="prizeTable"></table>
+      </div>
+      <div class="rules reveal">
+        <h3 data-i18n="rules_h"></h3>
+        <ul id="rulesList"></ul>
+        <div class="upd" id="upd"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="game" id="game">
+  <div class="wrap">
+    <div class="wheel-wrap reveal">
+      <div class="pointer" aria-hidden="true"></div>
+      <canvas id="wheel" width="840" height="840" aria-label="Kongsi wheel"></canvas>
+      <div class="hub" aria-hidden="true">SPIN</div>
+    </div>
+    <div class="reveal">
+      <h2 data-i18n="game_h"></h2>
+      <p class="sub" data-i18n="game_sub"></p>
+      <form id="spinForm" novalidate>
+        <input type="text" name="name" data-i18n-ph="f_name" required autocomplete="name">
+        <input type="tel" name="phone" data-i18n-ph="f_phone" required autocomplete="tel">
+        <input type="email" name="email" placeholder="Email" required autocomplete="email">
+        <input type="text" name="shop" data-i18n-ph="f_shop">
+        <button class="btn btn-red" type="submit" id="spinBtn" data-i18n="f_btn"></button>
+        <p class="fine" data-i18n-html="f_fine"></p>
+      </form>
+      <div class="result" id="result"><div data-i18n="r_won"></div><div class="big" id="prizeText"></div><p id="prizeNote" style="margin-top:8px;font-size:14px;opacity:.85"></p><a class="btn btn-red" id="waBtn" style="margin-top:16px" target="_blank" rel="noopener" data-i18n="r_wa"></a></div>
+    </div>
+  </div>
+</section>
+<canvas id="confetti"></canvas>
+
+<section id="plans">
+  <div class="wrap">
+    <h2 class="reveal" style="text-align:center" data-i18n="plans_h"></h2>
+    <p class="sub reveal" style="text-align:center" data-i18n="plans_sub"></p>
+    <div class="plans" id="plans"></div>
+    <p class="plans-note" data-i18n="plans_note"></p>
+  </div>
+</section>
+
+<section class="partners">
+  <div class="wrap">
+    <h2 class="reveal" data-i18n="who_h"></h2>
+    <p class="sub reveal" data-i18n="who_sub"></p>
+    <div class="cases">
+      <div class="case reveal"><div class="k" data-i18n="case1_k"></div><h3>汉唐养生馆 Han Tang</h3><p data-i18n="case1_p"></p></div>
+      <div class="case reveal"><div class="k" data-i18n="case2_k"></div><h3>NWS Media Sdn. Bhd.</h3><p data-i18n="case2_p"></p><a class="btn btn-ghost" style="margin-top:16px;padding:12px 20px;font-size:15px" id="partnerBtn" target="_blank" rel="noopener" data-i18n="case2_btn"></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <h2 class="reveal" style="margin-bottom:28px" data-i18n="faq_h"></h2>
+    <div id="faqList"></div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2 class="reveal" data-i18n-html="final_h"></h2>
+    <p class="sub reveal" data-i18n="final_sub"></p>
+    <div class="ctas reveal">
+      <a class="btn btn-red" id="demoWa" target="_blank" rel="noopener" data-i18n="final_cta1"></a>
+      <a class="btn btn-ghost" href="https://my.chatbees.io/p/8h33ALmc3" target="_blank" rel="noopener" data-i18n="final_cta2"></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><a class="logo" href="#top">Kongsi<span>.la</span></a><p style="margin-top:12px;opacity:.8">Scan · Share · Reward<br>扫码 · 分享 · 领奖励<br>Imbas · Kongsi · Dapat ganjaran</p></div>
+    <div><ul><li><a href="#how" data-i18n="nav_how"></a></li><li><a href="#board" data-i18n="nav_board"></a></li><li><a href="#plans" data-i18n="nav_plans"></a></li><li><a href="https://my.chatbees.io/p/8h33ALmc3" target="_blank" rel="noopener" data-i18n="ft_demo"></a></li></ul></div>
+    <div><ul><li><a href="https://wa.me/60167012397" target="_blank" rel="noopener">WhatsApp 016-7012 397</a></li><li><a href="mailto:lightwavecreators@gmail.com">lightwavecreators@gmail.com</a></li><li><a href="#" data-open="pdpaDlg" data-i18n="ft_pdpa"></a></li><li><a href="#" data-open="rulesDlg" data-i18n="ft_rules"></a></li></ul></div>
+    <div class="legal">Kongsi.la is a brand of Light Wave Creators Sdn. Bhd. (202401009992 / 1555842-U), Ulu Tiram, Johor, Malaysia. © 2026</div>
+  </div>
+</footer>
+
+<dialog id="pdpaDlg"><h3 data-i18n="pdpa_h"></h3><div data-i18n-html="pdpa_body"></div><button class="btn btn-ink close" data-close data-i18n="ok"></button></dialog>
+<dialog id="rulesDlg"><h3 data-i18n="rulesdlg_h"></h3><ul id="rulesFull"></ul><button class="btn btn-ink close" data-close data-i18n="ok"></button></dialog>
+
+<script>
+/* ===== config ===== */
+const SHEET_ENDPOINT = "https://my.chatbees.io/api/public/landing-pages/8525/sheet-data";
+const WA_NUMBER = "60167012397";
+const LEAD_WEBHOOK = "https://my.chatbees.io/api/webhooks/flow/7364/262b502212d9cbf8c86d75c698718371d0ecb0ef2c6111506745e9292a30428e";
+const FALLBACK_ROWS = [{rank:1,store_id:"HANTANG-KL",store:"汉唐养生馆 Han Tang",industry:"养生 SPA · 美容 · 造型",industry_en:"Wellness SPA · Beauty · Hair",shares:4,redeems:1,score:6,season:"2026 Q4 · Founding"}];
+
+/* ===== i18n ===== */
+const I18N={
+zh:{
+ nav_how:"怎么玩",nav_board:"🏆 排行榜",nav_game:"大转盘",nav_plans:"配套",nav_cta:"我是店家 · Join",
+ hero_tag:"🇲🇾 全马店家都能用 · 任何行业",hero_l1:"满意吗？",hero_l2:"就要 Kongsi！",
+ hero_sub:"让顾客帮你的店发帖——扫码、AI 写文案、一键分享到小红书 / Lemon8 / TikTok / IG / FB，顾客领代金券，你得到新客人。",
+ hero_cta1:"我是店家 → 看配套",hero_cta2:"我是合作方 → 玩 Demo",hero_voucher:"RM20 券",
+ ticker:["满意吗？就要 Kongsi！","Happy? Let's Kongsi!","Puas hati? Jom Kongsi!","小红书","Lemon8","TikTok","Instagram","Facebook","扫码 · 分享 · 领奖励"],
+ how_h:"三步，顾客就帮你发帖",how_sub:"扫码 · 分享 · 领奖励——不用教、不用求、不用等。",
+ s1_h:"扫码登记",s1_p:"顾客用手机相机扫桌卡 QR，30 秒登记。不用下载 App。",
+ s2_h:"AI 写文案、一键分享",s2_p:"AI 看照片写好 5 个平台的三语文案，一键复制、直接打开 App 发帖。",
+ s3_h:"领奖励",s3_p:"发完帖就领店家设定的代金券，下次再来。店员扫码核销，一张只能用一次。",
+ board_sub:"每季一次，每个行业一个 podium。顾客分享越多、回店核销越多，店就站得越高。",
+ season_lbl:"本季",cd:["天","时","分"],
+ founding:"<b>创始季 Founding Season（2026 年 10–12 月）</b>：第一季只展示参赛店家与实时 Kongsi 分数，不排名。2027 Q1 起正式排名、正式颁奖。现在加入的店家，都是创始店家。",
+ pts:"Kongsi 分",shares:"分享",redeems:"核销",empty1:"虚位以待 · 等你的店",empty:"等你来 Kongsi",rest_empty:"第 4–10 名：同行业店家加入后自动上榜",
+ upd_src:"数据来源：Kongsi.la 系统实时分享与核销记录",upd_live:"实时数据 · 更新于",
+ prizes_h:"上榜拿什么",
+ prizes:[["🥇","<b>下季度月费免 1 个月</b> + 官网首页 banner 展示一季 + 「本季冠军」实体牌 + Kongsi.la 社媒专访"],["🥈","<b>下季度月费 5 折</b> + 行业页置顶 + 数字勋章"],["🥉","<b>下季度月费 8 折</b> + 数字勋章"],["4–10","「Top 10」数字勋章 + 行业页展示"],["🏛️","连续三季冠军 → <b>Hall of Fame 殿堂店家</b>永久展示 + 免费升级一个配套等级"]],
+ rules_h:"怎么计分",
+ rules:["顾客每一次分享到任何平台 = <b>1 分</b>","顾客回店核销代金券 = <b>2 分</b>（分享带来真消费，才算真 Kongsi）","同一顾客同一天同一店只算一次；每人每店每季最多 5 次","每季 1 月 / 4 月 / 7 月 / 10 月 1 日归零重来，往季榜单永久存档","只比同行业的店，不同行业各自一个 podium","Kongsi.la 保留取消刷榜资格的权利 · <a href='#' data-open='rulesDlg'>完整规则</a>"],
+ game_h:"Kongsi 大转盘",game_sub:"店家专属。留下联络方式转一次，转到什么就送什么——签约时直接用。",
+ f_name:"你的名字",f_phone:"WhatsApp 号码 · 例 012-345 6789",f_shop:"店名（选填）",f_btn:"🎡 转一转",
+ f_fine:"每个号码限转一次。奖品在签约 Basic / Standard / Pro 任一配套时兑现，有效期 60 天。留资料即表示同意我们的 <a href='#' data-open='pdpaDlg'>隐私政策</a>。",
+ r_won:"🎉 恭喜！你转到了",r_wa:"WhatsApp 我们兑现 →",
+ prizes_wheel:[["免费试用 14 天","任一配套开通前先免费用 14 天。"],["免设置费","签约时设置费全免。"],["免费桌卡 10 张","A5 品牌桌卡，印好送到店。"],["再转一次","手气再来！"],["首月 8 折","任一配套首月月费 8 折。"],["Kongsi 贴纸包","一套 Kongsi.la 门口贴纸 + 收银台立牌。"]],
+ wa_prize:"Hi Director Ram，我在 Kongsi.la 大转盘转到了「{p}」！\n名字：{n}\n店名：{s}\nEmail：{e}",
+ plans_h:"配套",plans_sub:"一间店一个 QR，按月付。连锁店每间分店一个 Store ID，老板一个后台看全部。",
+ per:"/月",hot:"最多人选",learn:"了解 ",
+ plan_basic:["扫码登记 + 顾客名单（PDPA 合规）","AI 看图写文案，中 / EN / BM 三语","5 个平台一键分享：小红书 · Lemon8 · TikTok · IG · FB","电子代金券 + 店员扫码核销","店家后台（Live 数据表）+ 每月报表","自动进入季度 Podium"],
+ plan_std:["Basic 全部功能","顾客照片 + 视频自动剪成直式短视频，约 1 小时 Email 给顾客","每月 50 条视频","Podium 上榜店家专属勋章"],
+ plan_pro:["Standard 全部功能","每月 100 条视频","WhatsApp / Email 群发推广（有每月额度，只发给同意的顾客）","多分店对比后台"],
+ plans_note:"设置费、合约期、多分店与定制功能另议。价格不含 SST，以正式报价单为准。",
+ wa_plan:"Hi Director Ram，我想了解 Kongsi.la {p} 配套",
+ who_h:"谁在 Kongsi",who_sub:"创始店家与合作方。想当合作方（代理 / 媒体 / POS）赚佣金？一样欢迎。",
+ case1_k:"创始店家 #001 · Kuala Lumpur",case1_p:"一站式养生 · 美容 · 造型综合护理中心，12 大类服务，营业到凌晨 6 点。顾客发帖领 RM20 代金券，店员手机扫码核销。",
+ case2_k:"合作方",case2_p:"第一家合作方，用自己的 Demo 链接带店家体验、签约抽佣。合作方只需要一条专属链接 + 一张 QR。",case2_btn:"我想当合作方",wa_partner:"Hi Director Ram，我想当 Kongsi.la 合作方",
+ faq_h:"常见问题",
+ faq:[["顾客要下载 App 吗？","不用。手机相机扫 QR 就打开网页，登记、写文案、分享、领券都在同一页完成。提醒顾客用相机扫，不要用微信扫。"],["文案是 AI 写的，会不会每个人都一样？","不会。AI 看每位顾客自己的照片和勾选的项目来写，每篇不同；每个平台一个版本，中 / English / BM 三语。Lemon8 永远是马来文，马来顾客看得懂。"],["怎么防止有人刷排行榜？","同一顾客同一天同一店只算一次，每人每店每季最多 5 次；回店核销代金券才拿 2 分，所以光刷分享没有用。Kongsi.la 保留取消资格的权利。"],["代金券怎么核销？","店员用手机扫顾客券上的 QR，输入店员 PIN 确认。系统会显示有效 / 已使用 / 已过期，每张券只能用一次，顾客同时只能持有一张未使用的券。"],["我有几间分店，要买几个配套？","一个品牌一个账号，每间分店一个 Store ID 和 QR。老板看全部分店并对比，分店经理只看自己那间。多分店价格另议。"],["视频是即时的吗？","不是即时，系统每小时自动剪一次，通常一小时内 Email 给顾客。Standard 以上配套才有视频。"],["可以用奖励换 Google 评价吗？","不建议。用奖励换评价违反 Google 规定。Kongsi.la 奖励的是「发帖分享」，好评卡片只是顺手提醒。"]],
+ final_h:"你的顾客，<span>今天就可以开始帮你发帖。</span>",final_sub:"一张桌卡、一个 QR，一个月内看到第一批帖子。",final_cta1:"WhatsApp 预约 Demo",final_cta2:"自己先玩 Demo",wa_demo:"Hi Director Ram，我想预约 Kongsi.la Demo",
+ ft_demo:"合作方 Demo",ft_pdpa:"隐私政策 · PDPA",ft_rules:"排行榜规则",ok:"知道了",
+ pdpa_h:"隐私政策 · PDPA",
+ pdpa_body:"<p>Kongsi.la 由 Light Wave Creators Sdn. Bhd. 运营，遵守马来西亚《2010 年个人资料保护法令》(PDPA)。</p><ul><li>我们收集的资料：名字、电话、Email、店名，以及你在本网站主动提供的内容。</li><li>用途：联络你、兑现大转盘奖品、提供 Kongsi.la 服务与相关资讯。</li><li>我们不会把你的资料卖给第三方。只有经你同意，才会寄送推广讯息。</li><li>你可随时要求查看、更正或删除资料：lightwavecreators@gmail.com。</li></ul>",
+ rulesdlg_h:"Kongsi Podium 规则",
+ rules_full:["排行榜按季度计算（1–3 月、4–6 月、7–9 月、10–12 月），以马来西亚时间为准。","只计算通过 Kongsi.la 系统发生的分享与核销；平台实际发帖情况由店家自行核实。","同一顾客（以电话识别）同一天同一店只算一次；每人每店每季最多 5 次。","Kongsi 分 = 分享 ×1 + 代金券核销 ×2。","只与同一行业分类的店家比较。行业分类以 Kongsi.la 系统设定为准。","2026 Q4 为创始季，只展示分数不排名、不颁奖；2027 Q1 起正式排名。","奖励以「下季度月费」折抵，不可兑换现金；店家须在领奖季度仍为有效订户。","发现刷分、伪造或不当行为，Kongsi.la 有权取消该店当季资格。","店家加入 Kongsi.la 即同意店名与 logo 出现在本排行榜。"]
+},
+en:{
+ nav_how:"How it works",nav_board:"🏆 Leaderboard",nav_game:"Spin & win",nav_plans:"Plans",nav_cta:"I'm a shop · Join",
+ hero_tag:"🇲🇾 For any shop in Malaysia · Any industry",hero_l1:"Happy?",hero_l2:"Let's Kongsi!",
+ hero_sub:"Let your customers post for your shop — they scan, AI writes the caption, one tap shares to 小红书 / Lemon8 / TikTok / IG / FB, they claim a voucher, you get new customers.",
+ hero_cta1:"I'm a shop → See plans",hero_cta2:"I'm a partner → Try the demo",hero_voucher:"RM20 voucher",
+ ticker:["Happy? Let's Kongsi!","满意吗？就要 Kongsi！","Puas hati? Jom Kongsi!","小红书","Lemon8","TikTok","Instagram","Facebook","Scan · Share · Reward"],
+ how_h:"Three steps and your customers post for you",how_sub:"Scan · Share · Reward — no training, no begging, no waiting.",
+ s1_h:"Scan & register",s1_p:"Customers scan the table-card QR with their phone camera and register in 30 seconds. No app to download.",
+ s2_h:"AI caption, one-tap share",s2_p:"AI reads their photos and writes captions for 5 platforms in Chinese, English and BM. One tap copies it and opens the app.",
+ s3_h:"Claim the reward",s3_p:"After posting they claim the voucher you set, and come back to use it. Staff scan to redeem — each voucher works once.",
+ board_sub:"Every quarter, one podium per industry. The more customers share and come back to redeem, the higher your shop stands.",
+ season_lbl:"This season",cd:["days","hrs","min"],
+ founding:"<b>Founding Season (Oct–Dec 2026)</b>: the first season shows every participating shop and its live Kongsi points, with no ranking. Official ranking and prizes start in 2027 Q1. Everyone who joins now is a founding shop.",
+ pts:"Kongsi pts",shares:"shares",redeems:"redeems",empty1:"Your shop here?",empty:"Waiting for you",rest_empty:"Ranks 4–10: shops in this industry appear here automatically once they join",
+ upd_src:"Source: live share and redemption records in the Kongsi.la system",upd_live:"Live data · updated",
+ prizes_h:"What winners get",
+ prizes:[["🥇","<b>1 month free</b> next quarter + homepage banner for a season + a physical “Season Champion” plaque + a Kongsi.la social feature"],["🥈","<b>50% off</b> next quarter + top of the industry page + digital badge"],["🥉","<b>20% off</b> next quarter + digital badge"],["4–10","“Top 10” digital badge + listing on the industry page"],["🏛️","Champion three seasons in a row → <b>Hall of Fame</b> permanent listing + a free plan upgrade"]],
+ rules_h:"How scoring works",
+ rules:["Every customer share to any platform = <b>1 point</b>","A customer returning to redeem a voucher = <b>2 points</b> (sharing that brings real spend is real Kongsi)","One customer counts once per shop per day; max 5 times per shop per season","Scores reset on 1 Jan / Apr / Jul / Oct; past seasons are archived forever","Shops only compete within their own industry — each industry has its own podium","Kongsi.la may disqualify any shop that games the board · <a href='#' data-open='rulesDlg'>Full rules</a>"],
+ game_h:"Kongsi Spin & Win",game_sub:"For shop owners. Leave your contact, spin once, and whatever you land on is yours when you sign up.",
+ f_name:"Your name",f_phone:"WhatsApp number · e.g. 012-345 6789",f_shop:"Shop name (optional)",f_btn:"🎡 Spin",
+ f_fine:"One spin per number. Prizes are redeemed when you sign up for any Basic / Standard / Pro plan, valid 60 days. By submitting you agree to our <a href='#' data-open='pdpaDlg'>privacy policy</a>.",
+ r_won:"🎉 Congrats! You won",r_wa:"WhatsApp us to claim →",
+ prizes_wheel:[["14-day free trial","Try any plan free for 14 days before it starts."],["Setup fee waived","No setup fee when you sign up."],["10 free table cards","A5 branded table cards, printed and delivered."],["Spin again","One more go!"],["20% off first month","20% off the first month of any plan."],["Kongsi sticker pack","Door stickers + a counter stand for your shop."]],
+ wa_prize:"Hi Director Ram, I won “{p}” on the Kongsi.la wheel!\nName: {n}\nShop: {s}\nEmail: {e}",
+ plans_h:"Plans",plans_sub:"One QR per shop, billed monthly. Chains get one Store ID per outlet and one dashboard for the owner.",
+ per:"/month",hot:"Most popular",learn:"About ",
+ plan_basic:["Scan-to-register + customer list (PDPA compliant)","AI captions from photos in Chinese / EN / BM","One-tap share to 5 platforms: 小红书 · Lemon8 · TikTok · IG · FB","E-vouchers + staff scan-to-redeem","Live shop dashboard + monthly report","Automatic entry to the quarterly Podium"],
+ plan_std:["Everything in Basic","Customer photos + clips auto-edited into a vertical video, emailed in about an hour","50 videos a month","Exclusive badge for shops on the Podium"],
+ plan_pro:["Everything in Standard","100 videos a month","WhatsApp / Email broadcasts (monthly quota, opted-in customers only)","Multi-outlet comparison dashboard"],
+ plans_note:"Setup fee, contract term, multi-outlet pricing and custom features on request. Prices exclude SST; the official quotation applies.",
+ wa_plan:"Hi Director Ram, I'd like to know more about the Kongsi.la {p} plan",
+ who_h:"Who's Kongsi-ing",who_sub:"Founding shops and partners. Want to be a partner (agent / media / POS) and earn commission? You're welcome too.",
+ case1_k:"Founding shop #001 · Kuala Lumpur",case1_p:"One-stop wellness, beauty and hair centre with 12 service categories, open till 6 am. Customers post for an RM20 voucher; staff redeem it by scanning on their phone.",
+ case2_k:"Partner",case2_p:"Our first partner brings shops through its own demo link and earns commission on sign-ups. A partner only needs one link and one QR.",case2_btn:"I want to be a partner",wa_partner:"Hi Director Ram, I'd like to become a Kongsi.la partner",
+ faq_h:"FAQ",
+ faq:[["Do customers need an app?","No. Scanning the QR with the phone camera opens a web page where they register, get captions, share and claim — all on one page. Remind them to use the camera, not WeChat."],["If AI writes the captions, won't they all be the same?","No. AI writes from each customer's own photos and the items they tick, so every post is different; one version per platform in Chinese, English and BM. Lemon8 is always in Malay so Malay customers understand it."],["How do you stop people gaming the leaderboard?","One customer counts once per shop per day, max 5 per season; only a voucher redemption earns 2 points, so spamming shares doesn't help. Kongsi.la may disqualify shops."],["How are vouchers redeemed?","Staff scan the QR on the customer's voucher and confirm with a staff PIN. The system shows valid / used / expired; each voucher works once and a customer can hold only one unused voucher at a time."],["I have several outlets — how many plans?","One account per brand, one Store ID and QR per outlet. The owner sees and compares every outlet; outlet managers see only their own. Multi-outlet pricing on request."],["Is the video instant?","Not instant — the system edits every hour and usually emails the customer within an hour. Video is included from Standard up."],["Can I reward customers for Google reviews?","Better not — rewarding reviews breaks Google's rules. Kongsi.la rewards posting and sharing; the review card is only a gentle reminder."]],
+ final_h:"Your customers can <span>start posting for you today.</span>",final_sub:"One table card, one QR, first posts within a month.",final_cta1:"Book a demo on WhatsApp",final_cta2:"Try the demo yourself",wa_demo:"Hi Director Ram, I'd like to book a Kongsi.la demo",
+ ft_demo:"Partner demo",ft_pdpa:"Privacy policy · PDPA",ft_rules:"Leaderboard rules",ok:"Got it",
+ pdpa_h:"Privacy policy · PDPA",
+ pdpa_body:"<p>Kongsi.la is operated by Light Wave Creators Sdn. Bhd. and complies with Malaysia's Personal Data Protection Act 2010 (PDPA).</p><ul><li>What we collect: name, phone, email, shop name, and anything you submit on this site.</li><li>Why: to contact you, honour spin prizes and provide Kongsi.la services and related information.</li><li>We never sell your data. Promotional messages are sent only with your consent.</li><li>You may view, correct or delete your data any time: lightwavecreators@gmail.com.</li></ul>",
+ rulesdlg_h:"Kongsi Podium rules",
+ rules_full:["Seasons are calendar quarters (Jan–Mar, Apr–Jun, Jul–Sep, Oct–Dec), Malaysia time.","Only shares and redemptions recorded by the Kongsi.la system count; shops verify actual posts themselves.","One customer (identified by phone) counts once per shop per day, max 5 per shop per season.","Kongsi points = shares ×1 + voucher redemptions ×2.","Shops compete only within the same industry category as set in the Kongsi.la system.","2026 Q4 is the Founding Season: points shown, no ranking, no prizes. Official ranking starts 2027 Q1.","Prizes are credited against next quarter's fee, not cash; the shop must still be an active subscriber.","Kongsi.la may disqualify a shop for the season if gaming, forgery or misconduct is found.","By joining Kongsi.la a shop agrees to its name and logo appearing on this leaderboard."]
+},
+bm:{
+ nav_how:"Macam mana",nav_board:"🏆 Carta",nav_game:"Spin & menang",nav_plans:"Pakej",nav_cta:"Saya ada kedai · Join",
+ hero_tag:"🇲🇾 Untuk semua kedai di Malaysia · Apa-apa industri",hero_l1:"Puas hati?",hero_l2:"Jom Kongsi!",
+ hero_sub:"Biar customer post untuk kedai anda — scan, AI tulis caption, satu tap share ke 小红书 / Lemon8 / TikTok / IG / FB, customer dapat baucar, anda dapat customer baru.",
+ hero_cta1:"Saya ada kedai → Tengok pakej",hero_cta2:"Saya partner → Cuba demo",hero_voucher:"Baucar RM20",
+ ticker:["Puas hati? Jom Kongsi!","Happy? Let's Kongsi!","满意吗？就要 Kongsi！","Lemon8","TikTok","Instagram","Facebook","小红书","Imbas · Kongsi · Dapat ganjaran"],
+ how_h:"Tiga langkah, customer post untuk anda",how_sub:"Scan · Share · Reward — tak payah ajar, tak payah minta, tak payah tunggu.",
+ s1_h:"Scan & daftar",s1_p:"Customer scan QR kad meja guna kamera phone, daftar 30 saat je. Tak payah download app.",
+ s2_h:"AI tulis caption, satu tap share",s2_p:"AI tengok gambar dia dan tulis caption untuk 5 platform dalam Cina, English dan BM. Satu tap copy, terus buka app.",
+ s3_h:"Dapat ganjaran",s3_p:"Lepas post, customer claim baucar yang anda set, dan datang balik guna. Staff scan untuk redeem — satu baucar guna sekali je.",
+ board_sub:"Setiap suku tahun, satu podium untuk setiap industri. Lagi ramai customer share dan datang balik redeem, lagi tinggi kedai anda naik.",
+ season_lbl:"Musim ini",cd:["hari","jam","minit"],
+ founding:"<b>Founding Season (Okt–Dis 2026)</b>: musim pertama hanya tunjuk semua kedai peserta dengan mata Kongsi live, tak ada ranking. Ranking rasmi dan hadiah mula 2027 Q1. Siapa join sekarang, semua jadi founding shop.",
+ pts:"Mata Kongsi",shares:"share",redeems:"redeem",empty1:"Kedai anda di sini?",empty:"Tunggu anda Kongsi",rest_empty:"Tempat 4–10: kedai industri sama akan masuk automatik bila join",
+ upd_src:"Sumber: rekod share dan redeem live dalam sistem Kongsi.la",upd_live:"Data live · dikemaskini",
+ prizes_h:"Apa pemenang dapat",
+ prizes:[["🥇","<b>Free 1 bulan</b> yuran suku seterusnya + banner homepage satu musim + plak “Season Champion” + feature di social media Kongsi.la"],["🥈","<b>50% off</b> yuran suku seterusnya + top page industri + lencana digital"],["🥉","<b>20% off</b> yuran suku seterusnya + lencana digital"],["4–10","Lencana digital “Top 10” + senarai di page industri"],["🏛️","Juara 3 musim berturut-turut → <b>Hall of Fame</b> kekal + upgrade pakej percuma"]],
+ rules_h:"Macam mana kira mata",
+ rules:["Setiap share customer ke mana-mana platform = <b>1 mata</b>","Customer datang balik redeem baucar = <b>2 mata</b> (share yang bawa jualan betul, itu baru Kongsi betul)","Satu customer kira sekali je sehari untuk satu kedai; max 5 kali satu musim","Reset setiap 1 Jan / Apr / Jul / Okt; carta musim lepas disimpan selamanya","Kedai lawan dalam industri sama je — setiap industri ada podium sendiri","Kongsi.la boleh batalkan kelayakan kedai yang main tipu · <a href='#' data-open='rulesDlg'>Peraturan penuh</a>"],
+ game_h:"Kongsi Spin & Menang",game_sub:"Untuk owner kedai. Tinggalkan contact, spin sekali, apa yang anda dapat terus guna masa sign up.",
+ f_name:"Nama anda",f_phone:"Nombor WhatsApp · cth 012-345 6789",f_shop:"Nama kedai (optional)",f_btn:"🎡 Spin",
+ f_fine:"Satu spin untuk satu nombor. Hadiah ditebus bila sign up mana-mana pakej Basic / Standard / Pro, sah 60 hari. Dengan hantar, anda setuju dengan <a href='#' data-open='pdpaDlg'>polisi privasi</a> kami.",
+ r_won:"🎉 Tahniah! Anda dapat",r_wa:"WhatsApp kami untuk claim →",
+ prizes_wheel:[["Free trial 14 hari","Cuba mana-mana pakej free 14 hari dulu."],["Setup fee free","Tak payah bayar setup fee masa sign up."],["10 kad meja free","Kad meja A5 berjenama, siap print hantar ke kedai."],["Spin lagi","Cuba sekali lagi!"],["20% off bulan pertama","20% off yuran bulan pertama mana-mana pakej."],["Pek sticker Kongsi","Sticker pintu + stand kaunter untuk kedai anda."]],
+ wa_prize:"Hi Director Ram, saya dapat “{p}” dekat roda Kongsi.la!\nNama: {n}\nKedai: {s}\nEmail: {e}",
+ plans_h:"Pakej",plans_sub:"Satu QR untuk satu kedai, bayar bulanan. Chain store dapat satu Store ID setiap cawangan, owner tengok semua dalam satu dashboard.",
+ per:"/bulan",hot:"Paling popular",learn:"Pasal ",
+ plan_basic:["Scan & daftar + senarai customer (patuh PDPA)","AI tulis caption dari gambar, Cina / EN / BM","Satu tap share ke 5 platform: 小红书 · Lemon8 · TikTok · IG · FB","E-baucar + staff scan untuk redeem","Dashboard kedai live + laporan bulanan","Auto masuk Podium suku tahun"],
+ plan_std:["Semua dalam Basic","Gambar + video customer auto-edit jadi video menegak, email dalam lebih kurang sejam","50 video sebulan","Lencana eksklusif untuk kedai atas Podium"],
+ plan_pro:["Semua dalam Standard","100 video sebulan","Broadcast WhatsApp / Email (kuota bulanan, customer yang setuju je)","Dashboard banding banyak cawangan"],
+ plans_note:"Setup fee, tempoh kontrak, harga banyak cawangan dan feature custom — tanya kami. Harga tak termasuk SST; ikut quotation rasmi.",
+ wa_plan:"Hi Director Ram, saya nak tahu lebih pasal pakej Kongsi.la {p}",
+ who_h:"Siapa dah Kongsi",who_sub:"Founding shop dan partner. Nak jadi partner (agent / media / POS) dan dapat komisen? Boleh je.",
+ case1_k:"Founding shop #001 · Kuala Lumpur",case1_p:"Pusat wellness, kecantikan dan rambut serba lengkap, 12 kategori servis, buka sampai 6 pagi. Customer post dapat baucar RM20; staff redeem dengan scan phone.",
+ case2_k:"Partner",case2_p:"Partner pertama kami bawa kedai guna link demo sendiri dan dapat komisen bila sign up. Partner cuma perlu satu link dan satu QR.",case2_btn:"Saya nak jadi partner",wa_partner:"Hi Director Ram, saya nak jadi partner Kongsi.la",
+ faq_h:"Soalan lazim",
+ faq:[["Customer kena download app ke?","Tak payah. Scan QR guna kamera phone terus buka web page — daftar, caption, share, claim semua dalam satu page. Ingatkan customer guna kamera, bukan WeChat."],["Kalau AI tulis caption, semua sama ke?","Tak. AI tulis ikut gambar customer sendiri dan item yang dia tick, jadi setiap post lain; satu versi untuk setiap platform dalam Cina, English dan BM. Lemon8 selalu dalam BM supaya customer Melayu faham."],["Macam mana halang orang main tipu carta?","Satu customer kira sekali sehari untuk satu kedai, max 5 kali satu musim; redeem baucar je yang dapat 2 mata, jadi spam share tak guna. Kongsi.la boleh batalkan kelayakan."],["Macam mana redeem baucar?","Staff scan QR atas baucar customer dan confirm dengan PIN staff. Sistem tunjuk sah / dah guna / tamat tempoh; satu baucar guna sekali, customer boleh pegang satu baucar belum guna je."],["Saya ada beberapa cawangan — berapa pakej?","Satu akaun untuk satu brand, satu Store ID dan QR untuk setiap cawangan. Owner tengok dan banding semua cawangan; manager cawangan tengok cawangan dia je. Harga banyak cawangan — tanya kami."],["Video tu instant ke?","Bukan instant — sistem edit setiap jam dan biasanya email customer dalam masa sejam. Video ada dari pakej Standard ke atas."],["Boleh bagi ganjaran untuk Google review?","Baik jangan — bagi ganjaran untuk review langgar peraturan Google. Kongsi.la bagi ganjaran untuk post dan share; kad review cuma peringatan je."]],
+ final_h:"Customer anda boleh <span>mula post untuk anda hari ini.</span>",final_sub:"Satu kad meja, satu QR, post pertama dalam sebulan.",final_cta1:"Book demo di WhatsApp",final_cta2:"Cuba demo sendiri",wa_demo:"Hi Director Ram, saya nak book demo Kongsi.la",
+ ft_demo:"Demo partner",ft_pdpa:"Polisi privasi · PDPA",ft_rules:"Peraturan carta",ok:"Faham",
+ pdpa_h:"Polisi privasi · PDPA",
+ pdpa_body:"<p>Kongsi.la dikendalikan oleh Light Wave Creators Sdn. Bhd. dan mematuhi Akta Perlindungan Data Peribadi 2010 (PDPA) Malaysia.</p><ul><li>Apa kami kumpul: nama, telefon, email, nama kedai dan apa yang anda hantar di laman ini.</li><li>Kenapa: untuk hubungi anda, tunaikan hadiah spin dan sediakan servis Kongsi.la serta info berkaitan.</li><li>Kami tak jual data anda. Mesej promosi dihantar hanya dengan persetujuan anda.</li><li>Anda boleh lihat, betulkan atau padam data bila-bila masa: lightwavecreators@gmail.com.</li></ul>",
+ rulesdlg_h:"Peraturan Kongsi Podium",
+ rules_full:["Musim ikut suku tahun kalendar (Jan–Mac, Apr–Jun, Jul–Sep, Okt–Dis), waktu Malaysia.","Hanya share dan redeem yang direkod sistem Kongsi.la dikira; kedai sahkan post sebenar sendiri.","Satu customer (ikut nombor telefon) kira sekali sehari untuk satu kedai, max 5 kali satu musim.","Mata Kongsi = share ×1 + redeem baucar ×2.","Kedai lawan dalam kategori industri sama je, ikut setting sistem Kongsi.la.","2026 Q4 ialah Founding Season: mata ditunjuk, tak ada ranking, tak ada hadiah. Ranking rasmi mula 2027 Q1.","Hadiah ditolak dari yuran suku seterusnya, bukan tunai; kedai mesti masih pelanggan aktif.","Kongsi.la boleh batalkan kelayakan kedai untuk musim itu jika ada tipu, pemalsuan atau salah laku.","Dengan join Kongsi.la, kedai setuju nama dan logo dipaparkan dalam carta ini."]
+}};
+let LANG=(()=>{const s=localStorage.getItem('kongsi_lang');if(s&&I18N[s])return s;const b=(navigator.language||'').toLowerCase();return b.startsWith('zh')?'zh':b.startsWith('ms')?'bm':'en'})();
+const T=k=>I18N[LANG][k];
+function applyLang(){const d=I18N[LANG];document.documentElement.lang=LANG==='bm'?'ms':LANG;localStorage.setItem('kongsi_lang',LANG);
+ document.querySelectorAll('[data-i18n]').forEach(el=>{el.textContent=d[el.dataset.i18n]||''});
+ document.querySelectorAll('[data-i18n-html]').forEach(el=>{el.innerHTML=d[el.dataset.i18nHtml]||''});
+ document.querySelectorAll('[data-i18n-ph]').forEach(el=>{el.placeholder=d[el.dataset.i18nPh]||''});
+ document.querySelectorAll('.lang button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.lang===LANG));
+ document.getElementById('ticker').innerHTML=d.ticker.concat(d.ticker).map(s=>`<span>${s}<em>✦</em></span>`).join('');
+ document.getElementById('prizeTable').innerHTML=d.prizes.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td></tr>`).join('');
+ document.getElementById('rulesList').innerHTML=d.rules.map(r=>`<li>${r}</li>`).join('');
+ document.getElementById('rulesFull').innerHTML=d.rules_full.map(r=>`<li>${r}</li>`).join('');
+ document.getElementById('faqList').innerHTML=d.faq.map(q=>`<details class="q"><summary>${q[0]}</summary><p>${q[1]}</p></details>`).join('');
+ const wa=t=>`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(t)}`;
+ document.getElementById('plans').innerHTML=[['Basic','RM599','plan_basic','btn-ink',''],['Standard','RM999','plan_std','btn-red','hot'],['Pro','RM1999','plan_pro','btn-ink','']].map(p=>`<div class="plan ${p[4]} reveal in">${p[4]?`<span class="badge">${d.hot}</span>`:''}<div class="pname">${p[0]}</div><div class="price">${p[1]}<small> ${d.per}</small></div><ul>${d[p[2]].map(x=>`<li>${x}</li>`).join('')}</ul><a class="btn ${p[3]}" href="${wa(d.wa_plan.replace('{p}',p[0]))}" target="_blank" rel="noopener">${d.learn}${p[0]}</a></div>`).join('');
+ document.getElementById('partnerBtn').href=wa(d.wa_partner);document.getElementById('demoWa').href=wa(d.wa_demo);
+ bindDialogs();tick();if(ROWS.length)render();drawWheel();if(lastPrize!==null)showPrize(lastPrize)}
+document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>{LANG=b.dataset.lang;applyLang()}));
+
+/* ===== mobile nav ===== */
+const burger=document.getElementById('burger'),mnav=document.getElementById('mnav');
+burger.addEventListener('click',()=>{const o=!mnav.classList.contains('open');mnav.classList.toggle('open',o);burger.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''});
+mnav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mnav.classList.remove('open');burger.setAttribute('aria-expanded','false');document.body.style.overflow=''}));
+
+/* ===== reveal ===== */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.reveal,.podium').forEach(el=>io.observe(el));setTimeout(()=>document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in')),4000);
+
+/* ===== dialogs ===== */
+function bindDialogs(){document.querySelectorAll('[data-open]').forEach(a=>{a.onclick=e=>{e.preventDefault();document.getElementById(a.dataset.open).showModal()}});document.querySelectorAll('[data-close]').forEach(b=>{b.onclick=()=>b.closest('dialog').close()})}
+
+/* ===== season + countdown (MYT) ===== */
+function myt(){return new Date(Date.now()+8*3600e3)}
+function seasonInfo(){const n=myt();const y=n.getUTCFullYear(),m=n.getUTCMonth();const q=Math.floor(m/3);const end=Date.UTC(q===3?y+1:y,(q+1)%4*3,1)-8*3600e3;return{label:`${y} Q${q+1}`,end}}
+const S=seasonInfo();document.getElementById('seasonName').textContent=S.label;
+function tick(){let d=Math.max(0,S.end-Date.now());const dd=Math.floor(d/864e5);d-=dd*864e5;const hh=Math.floor(d/36e5);d-=hh*36e5;const mm=Math.floor(d/6e4);const u=T('cd');document.getElementById('cd').innerHTML=`<div>${dd}<small>${u[0]}</small></div><div>${hh}<small>${u[1]}</small></div><div>${mm}<small>${u[2]}</small></div>`}
+setInterval(tick,30000);
+
+/* ===== leaderboard ===== */
+let ROWS=[],FOUNDING=true,LIVE_AT='',CUR_IND=null;
+function normalise(json){let arr=json;if(json&&!Array.isArray(json)){arr=json.rows||json.data||json.values||json.records||Object.values(json).find(v=>Array.isArray(v))||[]}
+ if(arr.length&&Array.isArray(arr[0])){const h=arr[0].map(x=>String(x).trim().toLowerCase());arr=arr.slice(1).map(r=>Object.fromEntries(h.map((k,i)=>[k,r[i]])))}
+ return arr.map(r=>{const o={};for(const k in r)o[String(k).trim().toLowerCase()]=r[k];return o}).filter(r=>r.store_id&&String(r.store_id).trim()).map(r=>({rank:+r.rank||0,store_id:r.store_id,store:r.store||r.store_id,industry:r.industry||'其他',industry_en:r.industry_en||r.industry||'Other',shares:+r.shares||0,redeems:+r.redeems||0,score:+r.score||0,season:r.season||''}))}
+function initials(name){const en=(name.match(/[A-Za-z][A-Za-z ]+/)||[''])[0].trim();if(en)return en.split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase();return name.slice(0,1)}
+function indLabel(r){return LANG==='zh'?r.industry:r.industry_en}
+function render(){const tabs=document.getElementById('tabs');const inds=[];ROWS.forEach(r=>{if(!inds.find(x=>x.key===r.industry))inds.push({key:r.industry,label:indLabel(r)})});
+ if(!CUR_IND||!inds.find(x=>x.key===CUR_IND))CUR_IND=inds.length?inds[0].key:null;
+ tabs.innerHTML=inds.map(x=>`<button class="tab" role="tab" aria-selected="${x.key===CUR_IND}" data-ind="${x.key}">${x.label}</button>`).join('');
+ tabs.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{CUR_IND=b.dataset.ind;tabs.querySelectorAll('.tab').forEach(x=>x.setAttribute('aria-selected',x.dataset.ind===CUR_IND));show()}));
+ show();document.getElementById('foundingNote').style.display=FOUNDING?'flex':'none';
+ document.getElementById('upd').textContent=LIVE_AT?`${T('upd_live')} ${LIVE_AT} MYT`:T('upd_src')}
+function show(){const list=ROWS.filter(r=>r.industry===CUR_IND).sort((a,b)=>b.score-a.score);const pod=document.getElementById('podium');pod.classList.remove('in');
+ [1,2,3].forEach(i=>{const el=pod.querySelector('.p'+i);const r=list[i-1];el.classList.toggle('empty',!r);el.querySelector('.avatar').textContent=r?initials(r.store):i;el.querySelector('.name').textContent=r?r.store:(i===1?T('empty1'):T('empty'));el.querySelector('.score').innerHTML=(r?r.score:'—')+`<small>${T('pts')}${r?` · ${r.shares} ${T('shares')} · ${r.redeems} ${T('redeems')}`:''}</small>`});
+ requestAnimationFrame(()=>requestAnimationFrame(()=>pod.classList.add('in')));
+ const ol=document.getElementById('ranklist');const rest=list.slice(3,10);
+ ol.innerHTML=rest.length?rest.map((r,i)=>`<li><span class="r">${i+4}</span><span>${r.store}</span><span class="s">${r.score}</span></li>`).join(''):`<li class="empty">${T('rest_empty')}</li>`}
+async function load(){try{const res=await fetch(SHEET_ENDPOINT,{cache:'no-store'});const j=await res.json();const rows=normalise(j);if(!rows.length)throw 0;ROWS=rows;FOUNDING=/founding/i.test(rows[0].season||'');LIVE_AT=myt().toISOString().slice(0,16).replace('T',' ')}catch(e){ROWS=FALLBACK_ROWS}render()}
+
+/* ===== wheel ===== */
+const WHEEL_COLORS=["#FC593F","#FCD094","#E8751E","#F9E9D2","#DB2319","#02271F"];
+const WHEEL_WEIGHTS=[20,10,20,20,10,20];
+const cv=document.getElementById('wheel'),cx=cv.getContext('2d');
+function drawWheel(){const R=420,n=6,a=2*Math.PI/n,labels=T('prizes_wheel');cx.clearRect(0,0,840,840);WHEEL_COLORS.forEach((c,i)=>{cx.beginPath();cx.moveTo(R,R);cx.arc(R,R,R-6,i*a-Math.PI/2,(i+1)*a-Math.PI/2);cx.closePath();cx.fillStyle=c;cx.fill();cx.lineWidth=6;cx.strokeStyle='#02271F';cx.stroke();
+ cx.save();cx.translate(R,R);cx.rotate(i*a+a/2-Math.PI/2);cx.textAlign='right';cx.textBaseline='middle';cx.fillStyle=(i===5||i===4||i===0)?'#F9E9D2':'#02271F';const t=labels[i][0];cx.font=`800 ${t.length>12?22:28}px "Baloo 2","Noto Sans SC",sans-serif`;cx.fillText(t,R-40,0);cx.restore()});
+ cx.beginPath();cx.arc(R,R,R-4,0,2*Math.PI);cx.lineWidth=8;cx.strokeStyle='#02271F';cx.stroke()}
+function pick(){const tot=WHEEL_WEIGHTS.reduce((a,b)=>a+b,0);let r=Math.random()*tot;for(let i=0;i<6;i++){r-=WHEEL_WEIGHTS[i];if(r<0)return i}return 0}
+let spinning=false,rot=0,lastPrize=null,lastData=null;
+function showPrize(idx){const p=T('prizes_wheel')[idx],d=lastData;document.getElementById('prizeText').textContent=p[0];document.getElementById('prizeNote').textContent=p[1];document.getElementById('waBtn').href=`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(T('wa_prize').replace('{p}',p[0]).replace('{n}',d.name).replace('{s}',d.shop||'-').replace('{e}',d.email))}`;document.getElementById('result').classList.add('show')}
+document.getElementById('spinForm').addEventListener('submit',e=>{e.preventDefault();if(spinning)return;const f=e.target;const d=Object.fromEntries(new FormData(f));if(!d.name||!d.phone||!/.+@.+\..+/.test(d.email)){f.reportValidity();return}
+ const key='kongsi_spin_'+d.phone.replace(/\D/g,'');let idx;const prev=localStorage.getItem(key);if(prev!==null){idx=+prev}else{idx=pick();localStorage.setItem(key,idx)}
+ spinning=true;document.getElementById('spinBtn').disabled=true;const seg=60;const target=360*6+(360-(idx*seg+seg/2));rot+=target-(rot%360);cv.style.transform=`rotate(${rot}deg)`;
+ setTimeout(()=>{spinning=false;lastPrize=idx;lastData=d;showPrize(idx);confetti();if(idx===3){document.getElementById('spinBtn').disabled=false;localStorage.removeItem(key)}
+  if(prev===null||idx===3){let ph=d.phone.replace(/[^\d+]/g,'');if(ph.startsWith('0'))ph='+60'+ph.slice(1);else if(!ph.startsWith('+'))ph='+'+ph;const pz=I18N.zh.prizes_wheel[idx][0]+' / '+I18N.en.prizes_wheel[idx][0];
+   fetch(LEAD_WEBHOOK,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({contactName:d.name,contactEmail:d.email,contactPhone:ph,channel:'email',data:{source:'kongsi.la 官网 大转盘 ('+LANG+')',prize:pz,shop:d.shop||'-'}})}).catch(()=>{})}
+ },5400)});
+
+/* ===== confetti ===== */
+function confetti(){const c=document.getElementById('confetti');const x=c.getContext('2d');c.width=innerWidth;c.height=innerHeight;const P=[];const cols=['#DB2319','#FC593F','#E8751E','#FCD094','#02271F'];for(let i=0;i<160;i++)P.push({x:innerWidth/2,y:innerHeight*.5,vx:(Math.random()-.5)*18,vy:-Math.random()*16-4,s:6+Math.random()*8,c:cols[i%cols.length],r:Math.random()*6});let t=0;(function fr(){x.clearRect(0,0,c.width,c.height);P.forEach(p=>{p.vy+=.35;p.x+=p.vx;p.y+=p.vy;p.r+=.1;x.save();x.translate(p.x,p.y);x.rotate(p.r);x.fillStyle=p.c;x.fillRect(-p.s/2,-p.s/2,p.s,p.s*.6);x.restore()});if(++t<130)requestAnimationFrame(fr);else x.clearRect(0,0,c.width,c.height)})()}
+
+/* ===== boot ===== */
+applyLang();load();if(document.fonts)document.fonts.ready.then(drawWheel);
+</script>
+<script src="https://my.chatbees.io/widget.js" data-widget="53273692" async></script>
+</body>
+</html>
