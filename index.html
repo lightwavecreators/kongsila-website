@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="google-site-verification" content="O3zmRUjQxEVFSgMNxOBKMmHZJ6JyRKqyKSSQ5Spv3J4" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preload" as="image" href="https://my.chatbees.io/objects/public/form-uploads/937/1793431464965-4u013s9n-oyen_run_a.webp" fetchpriority="high">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Organization","@id":"https://www.kongsila.com/#org","name":"Kongsila","url":"https://www.kongsila.com/","logo":"https://my.chatbees.io/objects/public/form-uploads/937/1793331869837-atsoaihk-logo_icon_v2_256.png","email":"supportkongsila@gmail.com","telephone":"+60177605888","areaServed":"MY","parentOrganization":{"@type":"Organization","name":"Light Wave Creators Sdn. Bhd."},"sameAs":["https://www.facebook.com/kongsila.official","https://www.instagram.com/kongsila.official"]},
+{"@type":"WebSite","@id":"https://www.kongsila.com/#site","url":"https://www.kongsila.com/","name":"Kongsila","inLanguage":["en","zh","ms"],"publisher":{"@id":"https://www.kongsila.com/#org"}}
+]}
+</script>
 
 
 
 
 
-<meta property="og:url" content="https://kongsila.com/" />
+<meta property="og:url" content="https://www.kongsila.com/" />
+<link rel="canonical" href="https://www.kongsila.com/" />
 
 
 
@@ -328,7 +336,7 @@
 
 <nav class="nav" aria-label="main">
   <div class="wrap">
-    <a class="logo" href="#top"><img src="https://my.chatbees.io/objects/public/form-uploads/937/1793331869837-atsoaihk-logo_icon_v2_256.png" alt="" width="44" height="44"><b>Kongsi<span>la</span></b></a>
+    <a class="logo" href="#top"><img src="https://my.chatbees.io/objects/public/form-uploads/937/1793331869837-atsoaihk-logo_icon_v2_256.png" alt="Kongsila" width="44" height="44"><b>Kongsi<span>la</span></b></a>
     <ul>
       <li><a href="#how" data-i18n="nav_how"></a></li>
       <li><a href="#board" data-i18n="nav_board"></a></li>
@@ -351,49 +359,83 @@
 <header class="hero" id="top">
   <div class="wrap">
     <div>
-      <span class="tag" data-i18n="hero_tag"></span>
-      <h1 style="margin-top:18px;font-family:'Baloo 2','Noto Sans SC',system-ui,sans-serif;font-weight:900"><span class="l1" data-i18n="hero_l1"></span><span class="l2" data-i18n="hero_l2"></span></h1>
-      <p class="sub" data-i18n-html="hero_sub"></p>
+      <span class="tag" data-i18n="hero_tag">🇲🇾 For any shop in Malaysia · Any industry</span>
+      <h1 style="margin-top:18px;font-family:'Baloo 2','Noto Sans SC',system-ui,sans-serif;font-weight:900"><span class="l1" data-i18n="hero_l1">Happy?</span><span class="l2" data-i18n="hero_l2">Let's Kongsi!</span></h1>
+      <p class="sub" data-i18n-html="hero_sub">Let your customers post for your shop — they scan, AI writes the caption, one tap shares to 小红书 / Lemon8 / TikTok / IG / FB, they claim a voucher, you get new customers.</p>
       <div class="ctas">
         <a class="btn btn-red" href="#plans" data-i18n="hero_cta1"></a>
         <a class="btn btn-ghost" href="https://my.chatbees.io/p/8h33ALmc3" target="_blank" rel="noopener" data-i18n="hero_cta2"></a>
       </div>
     </div>
-    <div class="stickers" aria-hidden="true">
-      <div class="oyen-stage"><div class="oyen-ring"></div><video class="oyen-v" autoplay muted loop playsinline preload="auto" poster="https://my.chatbees.io/objects/public/form-uploads/937/1793271649669-qttinz10-oyen_hero_poster.jpg"><source src="https://my.chatbees.io/objects/public/form-uploads/937/1793271648611-b30vfvbb-oyen_hero_loop.mp4" type="video/mp4"></video><div class="oyen-say" data-i18n="oyen_say"></div></div>
-      <div class="sticker" style="top:2%;left:0;--rot:-6deg"><i>📕</i>小红书</div>
-      <div class="sticker" style="top:9%;right:0;--rot:5deg"><i>🍋</i>Lemon8</div>
-      <div class="sticker" style="top:76%;left:0;--rot:3deg"><i>🎵</i>TikTok</div>
-      <div class="sticker" style="top:84%;right:4%;--rot:-4deg"><i>📸</i>Instagram</div>
-      <div class="sticker" style="top:46%;right:-4%;--rot:6deg"><i>📘</i>Facebook</div>
-      <div class="sticker" style="top:-3%;left:36%;--rot:8deg;background:var(--red);color:#fff"><i>🎁</i><span data-i18n="hero_voucher"></span></div>
+    <div class="chase" id="chase" aria-hidden="true">
+      <div class="chase-sun"></div>
+      <span class="kb" style="--s:74px;left:6%;top:6%;--o:.10;--d:-2s"></span>
+      <span class="kb" style="--s:40px;right:10%;top:16%;--o:.09;--d:-5s"></span>
+      <span class="kb" style="--s:56px;right:4%;bottom:30%;--o:.08;--d:-8s"></span>
+      <div class="chase-ground"></div>
+      <div class="chase-score" id="caughtBox"><span data-i18n="hero_caught"></span><b id="caughtN">0</b></div>
+      <div class="chase-hint" data-i18n="hero_hint"></div>
+      <div class="chase-items" id="chaseItems"></div>
+      <div class="runner" id="runner">
+        <div class="oyen-say" data-i18n="oyen_say">Jom Kongsi! 🐾</div>
+        <div class="runner-body">
+          <img class="f fA on" src="https://my.chatbees.io/objects/public/form-uploads/937/1793431464965-4u013s9n-oyen_run_a.webp" alt="Oyen running" width="640" height="623" fetchpriority="high">
+          <img class="f fB" src="https://my.chatbees.io/objects/public/form-uploads/937/1793431466061-oykbfibz-oyen_run_b.webp" alt="" width="640" height="572">
+          <img class="f fC" src="https://my.chatbees.io/objects/public/form-uploads/937/1793431466716-vsfqtoqd-oyen_leap.webp" alt="" width="550" height="640">
+        </div>
+        <div class="runner-shadow"></div>
+      </div>
     </div>
   </div>
   <div class="hero-ticker" aria-hidden="true" style="font-family:'Baloo 2','Noto Sans SC',system-ui,sans-serif"><div class="ticker-track" id="ticker"></div></div>
 </header>
 
-<section class="how" id="how">
-  <div class="wrap">
-    <h2 class="reveal" data-i18n="how_h"></h2>
+<div class="stats"><div class="wrap" id="stats"></div></div>
+
+<section class="film" id="how">
+  <span class="kb kb-lt" style="--s:80px;left:5%;top:5%;--o:.06;--d:-2s"></span><span class="kb kb-lt" style="--s:44px;right:8%;top:9%;--o:.07;--d:-6s"></span>
+  <div class="wrap film-intro">
+    <div class="eyebrow" data-i18n="how_eb"></div>
+    <h2 class="reveal" data-i18n-html="how_h"></h2>
     <p class="sub reveal" data-i18n="how_sub"></p>
-    <div class="steps">
-      <div class="step reveal"><span class="n">1</span>
-        <img class="oyen-step" src="https://my.chatbees.io/objects/public/form-uploads/937/1793331872364-yl0nrsxx-oyen_scan_hd.webp" alt="Oyen scan" loading="lazy">
-        <h3 data-i18n="s1_h"></h3><p data-i18n="s1_p"></p></div>
-      <div class="step reveal"><span class="n">2</span>
-        <img class="oyen-step" src="https://my.chatbees.io/objects/public/form-uploads/937/1793331874033-q22ss992-oyen_selfie_hd.webp" alt="Oyen share" loading="lazy">
-        <h3 data-i18n="s2_h"></h3><p data-i18n="s2_p"></p></div>
-      <div class="step reveal"><span class="n">3</span>
-        <img class="oyen-step" src="https://my.chatbees.io/objects/public/form-uploads/937/1793331874913-um6b2bbo-oyen_reward_hd.webp" alt="Oyen reward" loading="lazy">
-        <h3 data-i18n="s3_h"></h3><p data-i18n="s3_p"></p></div>
+  </div>
+  <div class="film-track" id="film" data-ph="0">
+    <div class="film-stage">
+      <div class="wrap film-grid">
+        <div class="film-copy">
+          <div class="film-steps"><div class="fs" data-i="0"><div class="fs-n">01</div><h3 data-i18n="f0_h"></h3><p data-i18n="f0_p"></p></div><div class="fs" data-i="1"><div class="fs-n">02</div><h3 data-i18n="f1_h"></h3><p data-i18n="f1_p"></p></div><div class="fs" data-i="2"><div class="fs-n">03</div><h3 data-i18n="f2_h"></h3><p data-i18n="f2_p"></p></div><div class="fs" data-i="3"><div class="fs-n">04</div><h3 data-i18n="f3_h"></h3><p data-i18n="f3_p"></p></div><div class="fs" data-i="4"><div class="fs-n">05</div><h3 data-i18n="f4_h"></h3><p data-i18n="f4_p"></p></div></div>
+          <div class="film-dots" id="filmDots"><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="film-visual" aria-hidden="true">
+          <div class="film-glow"></div>
+          <div class="phone"><div class="notch"></div><div class="screen">
+            <div class="scr scr0"><div class="sbar"><span data-i18n="ph_cam"></span><span>●</span></div><div class="vf"><svg viewBox="-2 -2 29 29" class="qrsvg" data-qr></svg><div class="beam"></div></div><span class="pill" data-i18n="ph_scan"></span></div>
+            <div class="scr scr1"><div class="sbar"><b>Kongsi<span>la</span></b><span>9:41</span></div><div class="photos"><div>💆‍♀️</div><div>🌿</div><div>🍵</div></div><div class="chips"><span class="on">小红书</span><span>Lemon8</span><span>TikTok</span><span>IG</span><span>FB</span></div><div class="capbox"><span id="typeText"></span><span class="caret"></span></div><span class="pill aichip" data-i18n="ph_ai"></span></div>
+            <div class="scr scr2"><div class="sbar"><b>Kongsi<span>la</span></b><span>9:42</span></div><h4 data-i18n="ph_share"></h4><div class="plats"><div class="plat xhs"><i>📕</i>小红书</div><div class="plat l8"><i>🍋</i>Lemon8</div><div class="plat tt"><i>🎵</i>TikTok</div><div class="plat ig"><i>📸</i>Instagram</div><div class="plat fb"><i>📘</i>Facebook</div></div><div class="toast" data-i18n="ph_copied"></div></div>
+            <div class="scr scr3"><div class="shop">🎉 Thank you for sharing!</div><div class="ticket"><div class="amt">RM20</div><div class="vl" data-i18n="ph_voucher"></div><div class="mini"><svg viewBox="-2 -2 29 29" class="qrsvg" data-qr></svg></div><small data-i18n="ph_show"></small></div></div>
+            <div class="scr scr4"><div class="okc">✓</div><h4 data-i18n="ph_redeemed"></h4><span class="pill" data-i18n="ph_pts"></span><div class="bars"><i></i><i></i><i></i></div></div>
+          </div></div>
+          <img class="fo fo0 L" src="https://my.chatbees.io/objects/public/form-uploads/937/1793432794838-onpduym6-oyen6_qr.webp" alt="" loading="lazy" width="520" height="720">
+          <img class="fo fo1 L" src="https://my.chatbees.io/objects/public/form-uploads/937/1793432792200-h4zwnxwa-oyen6_laptop.webp" alt="" loading="lazy" width="658" height="720">
+          <img class="fo fo2 R" src="https://my.chatbees.io/objects/public/form-uploads/937/1793432793789-254p34ml-oyen6_mega.webp" alt="" loading="lazy" width="669" height="720">
+          <img class="fo fo3 R" src="https://my.chatbees.io/objects/public/form-uploads/937/1793432795681-y61r27ts-oyen6_reward.webp" alt="" loading="lazy" width="493" height="720">
+          <img class="fo fo4 L" src="https://my.chatbees.io/objects/public/form-uploads/937/1793432793063-r9u9g3tw-oyen6_love.webp" alt="" loading="lazy" width="619" height="720">
+          <div class="fly"><div class="sticker fc" style="--tx:-250px;--ty:-190px;--r:-8deg"><i>📕</i>小红书</div><div class="sticker fc" style="--tx:240px;--ty:-210px;--r:7deg"><i>🍋</i>Lemon8</div><div class="sticker fc" style="--tx:-280px;--ty:30px;--r:5deg"><i>🎵</i>TikTok</div><div class="sticker fc" style="--tx:270px;--ty:10px;--r:-6deg"><i>📸</i>Instagram</div><div class="sticker fc" style="--tx:-200px;--ty:230px;--r:4deg"><i>📘</i>Facebook</div></div>
+          <div class="pts">+2 ⭐</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="board" id="board">
+<div class="mega" aria-hidden="true"><div class="mega-track" id="megaTrack"><span>SCAN</span><i>✦</i><span class="o">SHARE</span><i>✦</i><span class="r">REWARD</span><i>✦</i><span class="o">KONGSI!</span><img src="https://my.chatbees.io/objects/public/form-uploads/937/1793431464965-4u013s9n-oyen_run_a.webp" alt="" loading="lazy" width="640" height="623"><i>✦</i></div></div>
+
+<section class="board kb-host" id="board">
+  <span class="kb kb-lt" style="--s:90px;right:5%;top:8%;--o:.07;--d:-3s"></span><span class="kb kb-lt" style="--s:44px;left:3%;bottom:14%;--o:.08;--d:-6s"></span>
   <div class="wrap">
     <div class="board-head">
       <div>
+        <div class="eyebrow" data-i18n="board_eb"></div>
         <h2 class="reveal">🏆 Kongsi Podium</h2>
         <p class="sub reveal" data-i18n="board_sub"></p>
       </div>
@@ -405,10 +447,13 @@
     </div>
     <div class="founding" id="foundingNote">🌱 <div data-i18n-html="founding"></div></div>
     <div class="tabs" role="tablist" id="tabs"></div>
-    <div class="podium" id="podium">
-      <div class="pod p2"><div class="who"><div class="avatar">2</div><div class="name">—</div><div class="score">—</div></div><div class="block">2</div></div>
-      <div class="pod p1"><div class="who"><div class="crown">👑</div><div class="avatar">1</div><div class="name">—</div><div class="score">—</div></div><div class="block">1</div></div>
-      <div class="pod p3"><div class="who"><div class="avatar">3</div><div class="name">—</div><div class="score">—</div></div><div class="block">3</div></div>
+    <div class="race" id="podium"><canvas class="fw"></canvas>
+      <div class="lane l1" data-x="0"><div class="lane-info"><span class="lane-rank">1</span><div><div class="name">—</div><div class="score">—</div></div></div>
+        <div class="lane-track"><span class="finish"></span><div class="racer"><span class="crown">👑</span><img class="f fA on" src="https://my.chatbees.io/objects/public/form-uploads/937/1793431464965-4u013s9n-oyen_run_a.webp" alt="" loading="lazy" width="640" height="623"><img class="f fB" src="https://my.chatbees.io/objects/public/form-uploads/937/1793431466061-oykbfibz-oyen_run_b.webp" alt="" loading="lazy" width="640" height="572"><img class="f fC" src="https://my.chatbees.io/objects/public/form-uploads/937/1793431466716-vsfqtoqd-oyen_leap.webp" alt="" loading="lazy" width="550" height="640"></div></div></div>
+      <div class="lane l2" data-x="0"><div class="lane-info"><span class="lane-rank">2</span><div><div class="name">—</div><div class="score">—</div></div></div>
+        <div class="lane-track"><span class="finish"></span><div class="racer"><span class="crown">👑</span><img class="f fA on" src="https://my.chatbees.io/objects/public/form-uploads/937/1793431464965-4u013s9n-oyen_run_a.webp" alt="" loading="lazy" width="640" height="623"><img class="f fB" src="https://my.chatbees.io/objects/public/form-uploads/937/1793431466061-oykbfibz-oyen_run_b.webp" alt="" loading="lazy" width="640" height="572"><img class="f fC" src="https://my.chatbees.io/objects/public/form-uploads/937/1793431466716-vsfqtoqd-oyen_leap.webp" alt="" loading="lazy" width="550" height="640"></div></div></div>
+      <div class="lane l3" data-x="0"><div class="lane-info"><span class="lane-rank">3</span><div><div class="name">—</div><div class="score">—</div></div></div>
+        <div class="lane-track"><span class="finish"></span><div class="racer"><span class="crown">👑</span><img class="f fA on" src="https://my.chatbees.io/objects/public/form-uploads/937/1793431464965-4u013s9n-oyen_run_a.webp" alt="" loading="lazy" width="640" height="623"><img class="f fB" src="https://my.chatbees.io/objects/public/form-uploads/937/1793431466061-oykbfibz-oyen_run_b.webp" alt="" loading="lazy" width="640" height="572"><img class="f fC" src="https://my.chatbees.io/objects/public/form-uploads/937/1793431466716-vsfqtoqd-oyen_leap.webp" alt="" loading="lazy" width="550" height="640"></div></div></div>
     </div>
     <ol class="ranklist" id="ranklist"></ol>
     <div class="board-foot">
@@ -425,7 +470,8 @@
   </div>
 </section>
 
-<section class="game" id="game">
+<section class="game kb-host" id="game">
+  <span class="kb" style="--s:56px;left:46%;top:8%;--o:.07;--d:-2s"></span><span class="kb" style="--s:36px;right:6%;bottom:12%;--o:.08;--d:-5s"></span>
   <div class="wrap">
     <div class="wheel-wrap reveal">
       <div class="pointer" aria-hidden="true"></div>
@@ -433,7 +479,8 @@
       <div class="hub" aria-hidden="true">SPIN</div>
     </div>
     <div class="reveal">
-      <h2 data-i18n="game_h"></h2>
+      <div class="eyebrow" data-i18n="game_eb"></div>
+      <h2 data-i18n-html="game_h"></h2>
       <p class="sub" data-i18n="game_sub"></p>
       <form id="spinForm" novalidate>
         <input type="text" name="name" data-i18n-ph="f_name" required autocomplete="name">
@@ -443,7 +490,7 @@
         <button class="btn btn-red" type="submit" id="spinBtn" data-i18n="f_btn"></button>
         <p class="fine" data-i18n-html="f_fine"></p>
       </form>
-      <div class="result" id="result"><img class="oyen-pop" src="https://my.chatbees.io/objects/public/form-uploads/937/1793331875736-kvuke0yd-oyen_yay_hd.webp" alt=""><div data-i18n="r_won"></div><div class="big" id="prizeText"></div><p id="prizeNote" style="margin-top:8px;font-size:14px;opacity:.85"></p><a class="btn btn-red" id="waBtn" style="margin-top:16px" target="_blank" rel="noopener" data-i18n="r_wa"></a></div>
+      <div class="result" id="result"><img class="oyen-pop" src="https://my.chatbees.io/objects/public/form-uploads/937/1793331875736-kvuke0yd-oyen_yay_hd.webp" alt="Oyen celebrating"><div data-i18n="r_won"></div><div class="big" id="prizeText"></div><p id="prizeNote" style="margin-top:8px;font-size:14px;opacity:.85"></p><a class="btn btn-red" id="waBtn" style="margin-top:16px" target="_blank" rel="noopener" data-i18n="r_wa"></a></div>
     </div>
   </div>
 </section>
@@ -451,19 +498,21 @@
 
 <section id="plans">
   <div class="wrap">
-    <h2 class="reveal" style="text-align:center" data-i18n="plans_h"></h2>
+    <div style="text-align:center"><div class="eyebrow" data-i18n="plans_eb"></div></div>
+    <h2 class="reveal" style="text-align:center" data-i18n-html="plans_h"></h2>
     <p class="sub reveal" style="text-align:center" data-i18n="plans_sub"></p>
-    <div class="plans" id="plans"></div>
+    <div class="plans" id="planGrid"></div>
     <p class="plans-note" data-i18n="plans_note"></p>
   </div>
 </section>
 
 <section class="partners">
   <div class="wrap">
-    <h2 class="reveal" data-i18n="who_h"></h2>
+    <div class="eyebrow" data-i18n="who_eb"></div>
+    <h2 class="reveal" data-i18n-html="who_h"></h2>
     <p class="sub reveal" data-i18n="who_sub"></p>
     <div class="cases">
-      <div class="case reveal"><img class="oyen-love" src="https://my.chatbees.io/objects/public/form-uploads/937/1793331876599-ka6owt8m-oyen_love_hd.webp" alt=""><div class="k" data-i18n="case1_k"></div><h3>汉唐养生馆 Han Tang</h3><p data-i18n="case1_p"></p></div>
+      <div class="case reveal"><img class="oyen-love" src="https://my.chatbees.io/objects/public/form-uploads/937/1793331876599-ka6owt8m-oyen_love_hd.webp" alt="Oyen with a heart" loading="lazy"><div class="k" data-i18n="case1_k"></div><h3>汉唐养生馆 Han Tang</h3><p data-i18n="case1_p"></p></div>
       <div class="case reveal"><div class="k" data-i18n="case2_k"></div><h3>NWS Media Sdn. Bhd.</h3><p data-i18n="case2_p"></p><a class="btn btn-ghost" style="margin-top:16px;padding:12px 20px;font-size:15px" id="partnerBtn" target="_blank" rel="noopener" data-i18n="case2_btn"></a></div>
     </div>
   </div>
@@ -471,12 +520,15 @@
 
 <section class="faq" id="faq">
   <div class="wrap">
-    <h2 class="reveal" style="margin-bottom:28px"><span data-i18n="faq_h"></span><img class="oyen-peek" src="https://my.chatbees.io/objects/public/form-uploads/937/1793331877274-y1phtu3l-oyen_wow_hd.webp" alt=""></h2>
+    <div class="eyebrow" data-i18n="faq_eb"></div>
+    <h2 class="reveal" style="margin-bottom:28px"><span data-i18n="faq_h"></span><img class="oyen-peek" src="https://my.chatbees.io/objects/public/form-uploads/937/1793331877274-y1phtu3l-oyen_wow_hd.webp" alt="Oyen surprised" loading="lazy"></h2>
     <div id="faqList"></div>
   </div>
 </section>
 
-<section class="final">
+<section class="final kb-host">
+  <div class="final-bg" aria-hidden="true">JOM KONGSI! ✦ HAPPY? LET'S KONGSI! ✦ PUAS HATI? JOM KONGSI! ✦ 就要 KONGSI！ ✦ JOM KONGSI! ✦ HAPPY? LET'S KONGSI! ✦ PUAS HATI? JOM KONGSI! ✦ 就要 KONGSI！ ✦</div>
+  <span class="kb" style="--s:70px;left:6%;top:18%;--o:.08;--d:-1s"></span><span class="kb" style="--s:42px;left:22%;bottom:16%;--o:.07;--d:-6s"></span><span class="kb" style="--s:34px;right:28%;top:12%;--o:.07;--d:-3s"></span>
   <div class="wrap">
     <h2 class="reveal" data-i18n-html="final_h"></h2>
     <p class="sub reveal" data-i18n="final_sub"></p>
@@ -484,13 +536,13 @@
       <a class="btn btn-red" id="demoWa" target="_blank" rel="noopener" data-i18n="final_cta1"></a>
       <a class="btn btn-ghost" href="https://my.chatbees.io/p/8h33ALmc3" target="_blank" rel="noopener" data-i18n="final_cta2"></a>
     </div>
-    <img class="oyen-wave" src="https://my.chatbees.io/objects/public/form-uploads/937/1793331873213-tcn4fv7l-oyen_hello_hd.webp" alt="Oyen" loading="lazy">
+    <img class="oyen-wave" src="https://my.chatbees.io/objects/public/form-uploads/937/1793432791042-4wv2iwyl-oyen6_jump.webp" alt="Oyen jumping" loading="lazy" width="593" height="720">
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <div><a class="logo" href="#top"><img src="https://my.chatbees.io/objects/public/form-uploads/937/1793331869837-atsoaihk-logo_icon_v2_256.png" alt="" width="44" height="44"><b>Kongsi<span>la</span></b></a><p style="margin-top:12px;opacity:.8">Scan · Share · Reward<br>扫码 · 分享 · 领奖励<br>Imbas · Kongsi · Dapat ganjaran</p><div class="social"><a href="https://www.facebook.com/kongsila.official" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H8v3h2.5V21z"/></svg></a><a href="https://www.instagram.com/kongsila.official" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 7.3A4.7 4.7 0 1 0 12 16.7 4.7 4.7 0 0 0 12 7.3zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm4.9-8.9a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2zM12 4c2.2 0 2.4 0 3.3.1 2.2.1 3.2 1.1 3.3 3.3.1.9.1 1.1.1 3.3v2.6c0 2.2 0 2.4-.1 3.3-.1 2.2-1.1 3.2-3.3 3.3-.9.1-1.1.1-3.3.1s-2.4 0-3.3-.1c-2.2-.1-3.2-1.1-3.3-3.3C5.3 15.6 5.3 15.4 5.3 13.2v-2.6c0-2.2 0-2.4.1-3.3.1-2.2 1.1-3.2 3.3-3.3C9.6 4 9.8 4 12 4zm0-1.6c-2.3 0-2.6 0-3.4.1-3 .1-4.6 1.8-4.8 4.8C3.7 8.1 3.7 8.4 3.7 10.7v2.6c0 2.3 0 2.6.1 3.4.1 3 1.8 4.6 4.8 4.8.9.1 1.1.1 3.4.1s2.6 0 3.4-.1c3-.1 4.6-1.8 4.8-4.8.1-.9.1-1.1.1-3.4v-2.6c0-2.3 0-2.6-.1-3.4-.1-3-1.8-4.6-4.8-4.8C14.6 2.4 14.3 2.4 12 2.4z"/></svg></a><a href="https://wa.me/60177605888" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2.5a9.4 9.4 0 0 0-8.1 14.2L2.6 21.5l4.9-1.3A9.4 9.4 0 1 0 12 2.5zm0 17.2c-1.5 0-2.9-.4-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A7.8 7.8 0 1 1 12 19.7zm4.3-5.8c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.4 6.4 0 0 1-3.2-2.8c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1l-.5-.2z"/></svg></a></div></div>
+    <div><a class="logo" href="#top"><img src="https://my.chatbees.io/objects/public/form-uploads/937/1793331869837-atsoaihk-logo_icon_v2_256.png" alt="Kongsila" width="44" height="44"><b>Kongsi<span>la</span></b></a><p style="margin-top:12px;opacity:.8">Scan · Share · Reward<br>扫码 · 分享 · 领奖励<br>Imbas · Kongsi · Dapat ganjaran</p><div class="social"><a href="https://www.facebook.com/kongsila.official" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H8v3h2.5V21z"/></svg></a><a href="https://www.instagram.com/kongsila.official" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 7.3A4.7 4.7 0 1 0 12 16.7 4.7 4.7 0 0 0 12 7.3zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm4.9-8.9a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2zM12 4c2.2 0 2.4 0 3.3.1 2.2.1 3.2 1.1 3.3 3.3.1.9.1 1.1.1 3.3v2.6c0 2.2 0 2.4-.1 3.3-.1 2.2-1.1 3.2-3.3 3.3-.9.1-1.1.1-3.3.1s-2.4 0-3.3-.1c-2.2-.1-3.2-1.1-3.3-3.3C5.3 15.6 5.3 15.4 5.3 13.2v-2.6c0-2.2 0-2.4.1-3.3.1-2.2 1.1-3.2 3.3-3.3C9.6 4 9.8 4 12 4zm0-1.6c-2.3 0-2.6 0-3.4.1-3 .1-4.6 1.8-4.8 4.8C3.7 8.1 3.7 8.4 3.7 10.7v2.6c0 2.3 0 2.6.1 3.4.1 3 1.8 4.6 4.8 4.8.9.1 1.1.1 3.4.1s2.6 0 3.4-.1c3-.1 4.6-1.8 4.8-4.8.1-.9.1-1.1.1-3.4v-2.6c0-2.3 0-2.6-.1-3.4-.1-3-1.8-4.6-4.8-4.8C14.6 2.4 14.3 2.4 12 2.4z"/></svg></a><a href="https://wa.me/60177605888" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2.5a9.4 9.4 0 0 0-8.1 14.2L2.6 21.5l4.9-1.3A9.4 9.4 0 1 0 12 2.5zm0 17.2c-1.5 0-2.9-.4-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A7.8 7.8 0 1 1 12 19.7zm4.3-5.8c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.4 6.4 0 0 1-3.2-2.8c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1l-.5-.2z"/></svg></a></div></div>
     <div><ul><li><a href="#how" data-i18n="nav_how"></a></li><li><a href="#board" data-i18n="nav_board"></a></li><li><a href="#plans" data-i18n="nav_plans"></a></li><li><a href="https://my.chatbees.io/p/8h33ALmc3" target="_blank" rel="noopener" data-i18n="ft_demo"></a></li></ul></div>
     <div><ul><li><a href="https://wa.me/60177605888" target="_blank" rel="noopener">WhatsApp 017-760 5888</a></li><li><a href="mailto:supportkongsila@gmail.com">supportkongsila@gmail.com</a></li><li><a href="#" data-open="pdpaDlg" data-i18n="ft_pdpa"></a></li><li><a href="#" data-open="rulesDlg" data-i18n="ft_rules"></a></li></ul></div>
     <div class="legal">Kongsila is a brand of Light Wave Creators Sdn. Bhd. (202401009992 / 1555842-U), Ulu Tiram, Johor, Malaysia. © 2026</div>
@@ -510,48 +562,82 @@ const FALLBACK_ROWS = [{rank:1,store_id:"HANTANG-KL",store:"汉唐养生馆 Han 
 /* ===== i18n ===== */
 const I18N={
 zh:{
- nav_how:"怎么玩",nav_board:"🏆 排行榜",nav_game:"大转盘",nav_plans:"配套",nav_cta:"我是店家 · Join",
- oyen_say:"Jom Kongsi! 🐾",hero_tag:"🇲🇾 全马店家都能用 · 任何行业",hero_l1:"满意吗？",hero_l2:"就要 Kongsi！",
- hero_sub:"让顾客帮你的店发帖——扫码、AI 写文案、一键分享到小红书 / Lemon8 / TikTok / IG / FB，顾客领代金券，你得到新客人。",
- hero_cta1:"我是店家 → 看配套",hero_cta2:"我是合作方 → 玩 Demo",hero_voucher:"RM20 券",
+ nav_how:"怎么玩",nav_board:"🏆 排行榜",nav_game:"大转盘",nav_plans:"配套",nav_cta:"我是老板 · Join",
+ oyen_say:"Jom Kongsi! 🐾",hero_tag:"🇲🇾 全马商家都能用 · 任何行业",hero_l1:"满意吗？",hero_l2:"就要 Kongsi！",
+ hero_sub:"让顾客帮你的店发帖——扫码、AI 写文案、一键分享到小红书 / Lemon8 / TikTok / IG / FB，顾客领 voucher，你多了新客人。",
+ hero_cta1:"我是老板 → 看配套",hero_cta2:"我是 Partner → 试玩 Demo",hero_voucher:"RM20 voucher",
  ticker:["满意吗？就要 Kongsi！","Happy? Let's Kongsi!","Puas hati? Jom Kongsi!","小红书","Lemon8","TikTok","Instagram","Facebook","扫码 · 分享 · 领奖励"],
  how_h:"三步，顾客就帮你发帖",how_sub:"扫码 · 分享 · 领奖励——不用教、不用求、不用等。",
  s1_h:"扫码登记",s1_p:"顾客用手机相机扫桌卡 QR，30 秒登记。不用下载 App。",
  s2_h:"AI 写文案、一键分享",s2_p:"AI 看照片写好 5 个平台的三语文案，一键复制、直接打开 App 发帖。",
- s3_h:"领奖励",s3_p:"发完帖就领店家设定的代金券，下次再来。店员扫码核销，一张只能用一次。",
- board_sub:"每季一次，每个行业一个 podium。顾客分享越多、回店核销越多，店就站得越高。",
+ s3_h:"领奖励",s3_p:"发完帖就领老板设定的 voucher，下次回来用。店员扫码 redeem，一张只能用一次。",
+ board_sub:"每季一次，每个行业一个 podium。顾客分享越多、回来 redeem 越多，你的店就站得越高。",
  season_lbl:"本季",cd:["天","时","分"],
- founding:"<b>创始季 Founding Season（2026 年 10–12 月）</b>：第一季只展示参赛店家与实时 Kongsi 分数，不排名。2027 Q1 起正式排名、正式颁奖。现在加入的店家，都是创始店家。",
- pts:"Kongsi 分",shares:"分享",redeems:"核销",empty1:"虚位以待 · 等你的店",empty:"等你来 Kongsi",rest_empty:"第 4–10 名：同行业店家加入后自动上榜",
- upd_src:"数据来源：Kongsila 系统实时分享与核销记录",upd_live:"实时数据 · 更新于",
+ founding:"<b>创始季 Founding Season（2026 年 10–12 月）</b>：第一季只展示参赛商家与实时 Kongsi 分数，不排名。2027 Q1 起正式排名、正式颁奖。现在加入的商家，都是创始商家。",
+ pts:"Kongsi 分",shares:"分享",redeems:"redeem",empty1:"虚位以待 · 等你的店",empty:"等你来 Kongsi",rest_empty:"第 4–10 名：同行业商家加入后自动上榜",
+ upd_src:"数据来源：Kongsila 系统实时分享与 redeem 记录",upd_live:"实时数据 · 更新于",
  prizes_h:"上榜拿什么",
- prizes:[["🥇","<b>下季度月费免 1 个月</b> + 官网首页 banner 展示一季 + 「本季冠军」实体牌 + Kongsila 社媒专访"],["🥈","<b>下季度月费 5 折</b> + 行业页置顶 + 数字勋章"],["🥉","<b>下季度月费 8 折</b> + 数字勋章"],["4–10","「Top 10」数字勋章 + 行业页展示"],["🏛️","连续三季冠军 → <b>Hall of Fame 殿堂店家</b>永久展示 + 免费升级一个配套等级"]],
+ prizes:[["🥇","<b>下季度月费免 1 个月</b> + 官网首页 banner 展示一季 + 「本季冠军」奖牌 + Kongsila 社交媒体专访"],["🥈","<b>下季度月费 5 折</b> + 行业页置顶 + 数字 badge"],["🥉","<b>下季度月费 8 折</b> + 数字 badge"],["4–10","「Top 10」数字 badge + 行业页展示"],["🏛️","连续三季冠军 → <b>Hall of Fame 殿堂商家</b>永久展示 + 免费升级一个配套等级"]],
  rules_h:"怎么计分",
- rules:["顾客每一次分享到任何平台 = <b>1 分</b>","顾客回店核销代金券 = <b>2 分</b>（分享带来真消费，才算真 Kongsi）","同一顾客同一天同一店只算一次；每人每店每季最多 5 次","每季 1 月 / 4 月 / 7 月 / 10 月 1 日归零重来，往季榜单永久存档","只比同行业的店，不同行业各自一个 podium","Kongsila 保留取消刷榜资格的权利 · <a href='#' data-open='rulesDlg'>完整规则</a>"],
- game_h:"Kongsi 大转盘",game_sub:"店家专属。留下联络方式转一次，转到什么就送什么——签约时直接用。",
+ rules:["顾客每一次分享到任何平台 = <b>1 分</b>","顾客回店 redeem voucher = <b>2 分</b>（分享带来真消费，才算真 Kongsi）","同一顾客同一天同一店只算一次；每人每店每季最多 5 次","每季 1 月 / 4 月 / 7 月 / 10 月 1 日归零重来，往季榜单永久存档","只跟同行业的店比，不同行业各自一个 podium","Kongsila 保留取消刷榜资格的权利 · <a href='#' data-open='rulesDlg'>完整规则</a>"],
+ game_h:"Kongsi 大转盘",game_sub:"老板专属。留下联络方式转一次，转到什么就送什么——sign up 时直接用。",
  f_name:"你的名字",f_phone:"WhatsApp 号码 · 例 012-345 6789",f_shop:"店名（选填）",f_btn:"🎡 转一转",
- f_fine:"每个号码限转一次。奖品在签约 Basic / Standard / Pro 任一配套时兑现，有效期 60 天。留资料即表示同意我们的 <a href='#' data-open='pdpaDlg'>隐私政策</a>。",
+ f_fine:"每个号码限转一次。奖品在 sign up Basic / Standard / Pro 任一配套时兑现，有效期 60 天。留资料即表示同意我们的 <a href='#' data-open='pdpaDlg'>隐私政策</a>。",
  r_won:"🎉 恭喜！你转到了",r_wa:"WhatsApp 我们兑现 →",
- prizes_wheel:[["免费试用 14 天","任一配套开通前先免费用 14 天。"],["免设置费","签约时设置费全免。"],["免费桌卡 10 张","A5 品牌桌卡，印好送到店。"],["再转一次","手气再来！"],["首月 8 折","任一配套首月月费 8 折。"],["Kongsi 贴纸包","一套 Kongsila 门口贴纸 + 收银台立牌。"]],
+ prizes_wheel:[["免费试用 14 天","任一配套开通前先免费用 14 天。"],["免 setup fee","Sign up 时 setup fee 全免。"],["免费桌卡 10 张","A5 品牌桌卡，印好送到你的店。"],["再转一次","手气再来！"],["首月 8 折","任一配套首月月费 8 折。"],["Kongsi 贴纸包","一套 Kongsila 门口 sticker + 柜台 standee。"]],
  wa_prize:"Hi Director Ram，我在 Kongsila 大转盘转到了「{p}」！\n名字：{n}\n店名：{s}\nEmail：{e}",
- plans_h:"配套",plans_sub:"一间店一个 QR，按月付。连锁店每间分店一个 Store ID，老板一个后台看全部。",
+ plans_h:"配套",plans_sub:"一间店一个 QR，按月付。连锁店每间分店一个 Store ID，老板一个 dashboard 看全部。",
  per:"/月",hot:"最多人选",learn:"了解 ",
- plan_basic:["扫码登记 + 顾客名单（PDPA 合规）","AI 看图写文案，中 / EN / BM 三语","5 个平台一键分享：小红书 · Lemon8 · TikTok · IG · FB","电子代金券 + 店员扫码核销","店家后台（Live 数据表）+ 每月报表","自动进入季度 Podium"],
- plan_std:["Basic 全部功能","顾客照片 + 视频自动剪成直式短视频，约 1 小时 Email 给顾客","每月 50 条视频","Podium 上榜店家专属勋章"],
- plan_pro:["Standard 全部功能","每月 100 条视频","WhatsApp / Email 群发推广（有每月额度，只发给同意的顾客）","多分店对比后台"],
- plans_note:"设置费、合约期、多分店与定制功能另议。价格不含 SST，以正式报价单为准。",
+ plan_basic:["扫码登记 + 顾客名单（PDPA 合规）","AI 看图写文案，中 / EN / BM 三语","5 个平台一键分享：小红书 · Lemon8 · TikTok · IG · FB","电子 voucher + 店员扫码 redeem","老板 dashboard（Live 数据）+ 每月报告","自动进入季度 Podium"],
+ plan_std:["Basic 全部功能","顾客照片 + 视频自动剪成直式短视频，约 1 小时 Email 给顾客","每月 50 条视频","Podium 上榜商家专属 badge"],
+ plan_pro:["Standard 全部功能","每月 100 条视频","WhatsApp / Email 群发推广（有每月额度，只发给同意的顾客）","多分店对比 dashboard"],
+ plans_note:"Setup fee、合约期、多分店与定制功能另外谈。价格不含 SST，以正式 quotation 为准。",
  wa_plan:"Hi Director Ram，我想了解 Kongsila {p} 配套",
- who_h:"谁在 Kongsi",who_sub:"创始店家与合作方。想当合作方（代理 / 媒体 / POS）赚佣金？一样欢迎。",
- case1_k:"创始店家 #001 · Kuala Lumpur",case1_p:"一站式养生 · 美容 · 造型综合护理中心，12 大类服务，营业到凌晨 6 点。顾客发帖领 RM20 代金券，店员手机扫码核销。",
- case2_k:"合作方",case2_p:"第一家合作方，用自己的 Demo 链接带店家体验、签约抽佣。合作方只需要一条专属链接 + 一张 QR。",case2_btn:"我想当合作方",wa_partner:"Hi Director Ram，我想当 Kongsila 合作方",
+ who_h:"谁在 Kongsi",who_sub:"创始商家与合作伙伴。想当 Partner（代理 / 媒体 / POS）赚佣金？一样欢迎。",
+ case1_k:"创始商家 #001 · Kuala Lumpur",case1_p:"一站式养生 · 美容 · 造型综合护理中心，12 大类服务，营业到凌晨 6 点。顾客发帖领 RM20 voucher，店员用手机扫码 redeem。",
+ case2_k:"Partner 合作伙伴",case2_p:"第一家 Partner，用自己的 Demo 链接带老板们体验、sign up 就拿佣金。Partner 只需要一条专属链接 + 一张 QR。",case2_btn:"我想当 Partner",wa_partner:"Hi Director Ram，我想当 Kongsila Partner",
  faq_h:"常见问题",
- faq:[["顾客要下载 App 吗？","不用。手机相机扫 QR 就打开网页，登记、写文案、分享、领券都在同一页完成。提醒顾客用相机扫，不要用微信扫。"],["文案是 AI 写的，会不会每个人都一样？","不会。AI 看每位顾客自己的照片和勾选的项目来写，每篇不同；每个平台一个版本，中 / English / BM 三语。Lemon8 永远是马来文，马来顾客看得懂。"],["怎么防止有人刷排行榜？","同一顾客同一天同一店只算一次，每人每店每季最多 5 次；回店核销代金券才拿 2 分，所以光刷分享没有用。Kongsila 保留取消资格的权利。"],["代金券怎么核销？","店员用手机扫顾客券上的 QR，输入店员 PIN 确认。系统会显示有效 / 已使用 / 已过期，每张券只能用一次，顾客同时只能持有一张未使用的券。"],["我有几间分店，要买几个配套？","一个品牌一个账号，每间分店一个 Store ID 和 QR。老板看全部分店并对比，分店经理只看自己那间。多分店价格另议。"],["视频是即时的吗？","不是即时，系统每小时自动剪一次，通常一小时内 Email 给顾客。Standard 以上配套才有视频。"],["可以用奖励换 Google 评价吗？","不建议。用奖励换评价违反 Google 规定。Kongsila 奖励的是「发帖分享」，好评卡片只是顺手提醒。"]],
+ faq:[["顾客要下载 App 吗？","不用。手机相机扫 QR 就打开网页，登记、写文案、分享、领券都在同一页完成。提醒顾客用相机扫，不要用 WeChat 扫。"],["文案是 AI 写的，会不会每个人都一样？","不会。AI 看每位顾客自己的照片和勾选的项目来写，每篇不同；每个平台一个版本，中 / English / BM 三语。Lemon8 永远是马来文，马来顾客看得懂。"],["怎么防止有人刷排行榜？","同一顾客同一天同一店只算一次，每人每店每季最多 5 次；回店 redeem voucher 才拿 2 分，所以光刷分享没有用。Kongsila 保留取消资格的权利。"],["Voucher 怎么 redeem？","店员用手机扫顾客 voucher 上的 QR，输入店员 PIN 确认。系统会显示有效 / 已使用 / 已过期，每张 voucher 只能用一次，顾客同时只能拿着一张还没用的 voucher。"],["我有几间分店，要买几个配套？","一个品牌一个账号，每间分店一个 Store ID 和 QR。老板看全部分店并对比，分店经理只看自己那间。多分店价格另议。"],["视频是即时的吗？","不是即时的，系统每小时自动剪一次，通常一小时内 Email 给顾客。Standard 以上配套才有视频。"],["可以用奖励换 Google 评价吗？","不建议。用奖励换评价违反 Google 规定。Kongsila 奖励的是「发帖分享」，好评卡片只是顺手提醒。"]],
  final_h:"你的顾客，<span>今天就可以开始帮你发帖。</span>",final_sub:"一张桌卡、一个 QR，一个月内看到第一批帖子。",final_cta1:"WhatsApp 预约 Demo",final_cta2:"自己先玩 Demo",wa_demo:"Hi Director Ram，我想预约 Kongsila Demo",
- ft_demo:"合作方 Demo",ft_pdpa:"隐私政策 · PDPA",ft_rules:"排行榜规则",ok:"知道了",
+ ft_demo:"Partner Demo",ft_pdpa:"隐私政策 · PDPA",ft_rules:"排行榜规则",ok:"知道了",
  pdpa_h:"隐私政策 · PDPA",
  pdpa_body:"<p>Kongsila 由 Light Wave Creators Sdn. Bhd. 运营，遵守马来西亚《2010 年个人资料保护法令》(PDPA)。</p><ul><li>我们收集的资料：名字、电话、Email、店名，以及你在本网站主动提供的内容。</li><li>用途：联络你、兑现大转盘奖品、提供 Kongsila 服务与相关资讯。</li><li>我们不会把你的资料卖给第三方。只有经你同意，才会寄送推广讯息。</li><li>你可随时要求查看、更正或删除资料：supportkongsila@gmail.com。</li></ul>",
  rulesdlg_h:"Kongsi Podium 规则",
- rules_full:["排行榜按季度计算（1–3 月、4–6 月、7–9 月、10–12 月），以马来西亚时间为准。","只计算通过 Kongsila 系统发生的分享与核销；平台实际发帖情况由店家自行核实。","同一顾客（以电话识别）同一天同一店只算一次；每人每店每季最多 5 次。","Kongsi 分 = 分享 ×1 + 代金券核销 ×2。","只与同一行业分类的店家比较。行业分类以 Kongsila 系统设定为准。","2026 Q4 为创始季，只展示分数不排名、不颁奖；2027 Q1 起正式排名。","奖励以「下季度月费」折抵，不可兑换现金；店家须在领奖季度仍为有效订户。","发现刷分、伪造或不当行为，Kongsila 有权取消该店当季资格。","店家加入 Kongsila 即同意店名与 logo 出现在本排行榜。"]
+ rules_full:["排行榜按季度计算（1–3 月、4–6 月、7–9 月、10–12 月），以马来西亚时间为准。","只计算通过 Kongsila 系统发生的分享与 redeem；平台上实际发帖的情况由老板自行核实。","同一顾客（以电话识别）同一天同一店只算一次；每人每店每季最多 5 次。","Kongsi 分 = 分享 ×1 + voucher redeem ×2。","只跟同一行业分类的商家比较。行业分类以 Kongsila 系统设定为准。","2026 Q4 为创始季，只展示分数不排名、不颁奖；2027 Q1 起正式排名。","奖励以「下季度月费」折抵，不能换现金；商家在领奖季度必须还是有效订户。","发现刷分、伪造或不当行为，Kongsila 有权取消该店当季资格。","商家加入 Kongsila 即同意店名与 logo 出现在本排行榜。"],
+ how_eb:"01 · 怎么玩",
+ how_h:"三步，顾客就<mark>帮你发帖</mark>",
+ how_sub:"往下滑，看一位顾客怎样帮你的店 Kongsi 👇",
+ f0_h:"扫桌卡 QR",
+ f0_p:"顾客用手机相机一扫，30 秒登记，不用下载 App。",
+ f1_h:"AI 帮忙写文案",
+ f1_p:"AI 看顾客的照片，写好中 / EN / BM 三语文案，每一篇都不一样。",
+ f2_h:"一键分享 5 个平台",
+ f2_p:"小红书、Lemon8、TikTok、IG、FB——一键复制，直接打开 App 发帖。",
+ f3_h:"马上领 voucher",
+ f3_p:"发完帖就领老板设定的 voucher。顾客开心，也多了一个回来的理由。",
+ f4_h:"回店 redeem，生意回来",
+ f4_p:"店员扫码 redeem，一张只能用一次。分享变成真消费，还帮你的店冲排行榜。",
+ type_cap:"今天来这家店做足疗，师傅手法超专业，整个人放松到想睡 😴 环境干净又舒服，常常坐办公室的朋友一定要来试！#Kongsila #养生日常",
+ ph_cam:"📷 相机",
+ ph_scan:"扫我！",
+ ph_ai:"✨ AI 正在写…",
+ ph_share:"分享到",
+ ph_copied:"✓ 文案已复制，正在打开 App…",
+ ph_voucher:"voucher",
+ ph_show:"出示给店员扫码",
+ ph_redeemed:"Redeem 成功！",
+ ph_pts:"+2 Kongsi 分",
+ stats:[[5, "", "个平台一键分享"], [3, "", "种语言 AI 文案"], [30, "秒", "顾客完成登记"], [0, "", "个 App 要下载"]],
+ hero_caught:"Oyen 抓到",
+ hero_hint:"👆 点 icon，帮 Oyen 抓！",
+ board_eb:"02 · 排行榜",
+ game_eb:"03 · 老板专属",
+ plans_eb:"04 · 配套",
+ who_eb:"05 · 谁在 Kongsi",
+ faq_eb:"06 · FAQ",
+ game_h:"Kongsi <mark>大转盘</mark>",
+ plans_h:"选一个<mark>配套</mark>",
+ who_h:"谁在 <mark>Kongsi</mark>"
 },
 en:{
  nav_how:"How it works",nav_board:"🏆 Leaderboard",nav_game:"Spin & win",nav_plans:"Plans",nav_cta:"I'm a shop · Join",
@@ -595,7 +681,41 @@ en:{
  pdpa_h:"Privacy policy · PDPA",
  pdpa_body:"<p>Kongsila is operated by Light Wave Creators Sdn. Bhd. and complies with Malaysia's Personal Data Protection Act 2010 (PDPA).</p><ul><li>What we collect: name, phone, email, shop name, and anything you submit on this site.</li><li>Why: to contact you, honour spin prizes and provide Kongsila services and related information.</li><li>We never sell your data. Promotional messages are sent only with your consent.</li><li>You may view, correct or delete your data any time: supportkongsila@gmail.com.</li></ul>",
  rulesdlg_h:"Kongsi Podium rules",
- rules_full:["Seasons are calendar quarters (Jan–Mar, Apr–Jun, Jul–Sep, Oct–Dec), Malaysia time.","Only shares and redemptions recorded by the Kongsila system count; shops verify actual posts themselves.","One customer (identified by phone) counts once per shop per day, max 5 per shop per season.","Kongsi points = shares ×1 + voucher redemptions ×2.","Shops compete only within the same industry category as set in the Kongsila system.","2026 Q4 is the Founding Season: points shown, no ranking, no prizes. Official ranking starts 2027 Q1.","Prizes are credited against next quarter's fee, not cash; the shop must still be an active subscriber.","Kongsila may disqualify a shop for the season if gaming, forgery or misconduct is found.","By joining Kongsila a shop agrees to its name and logo appearing on this leaderboard."]
+ rules_full:["Seasons are calendar quarters (Jan–Mar, Apr–Jun, Jul–Sep, Oct–Dec), Malaysia time.","Only shares and redemptions recorded by the Kongsila system count; shops verify actual posts themselves.","One customer (identified by phone) counts once per shop per day, max 5 per shop per season.","Kongsi points = shares ×1 + voucher redemptions ×2.","Shops compete only within the same industry category as set in the Kongsila system.","2026 Q4 is the Founding Season: points shown, no ranking, no prizes. Official ranking starts 2027 Q1.","Prizes are credited against next quarter's fee, not cash; the shop must still be an active subscriber.","Kongsila may disqualify a shop for the season if gaming, forgery or misconduct is found.","By joining Kongsila a shop agrees to its name and logo appearing on this leaderboard."],
+ how_eb:"01 · How it works",
+ how_h:"Three steps. Customers <mark>post for you.</mark>",
+ how_sub:"Scroll down and watch one customer Kongsi for your shop 👇",
+ f0_h:"Scan the table card",
+ f0_p:"Customers scan with their phone camera and register in 30 seconds. No app needed.",
+ f1_h:"AI writes the caption",
+ f1_p:"AI looks at their photos and writes captions in Chinese, English and BM — every post is different.",
+ f2_h:"One tap, 5 platforms",
+ f2_p:"小红书, Lemon8, TikTok, IG, FB — one tap copies the caption and opens the app.",
+ f3_h:"Voucher, right away",
+ f3_p:"Post done, voucher claimed. A happy customer with a reason to come back.",
+ f4_h:"They come back to redeem",
+ f4_p:"Staff scan to redeem — each voucher works once. Shares turn into real sales and push your shop up the leaderboard.",
+ type_cap:"Best foot massage I've had in ages 😴 Super skilled therapist, clean and cosy place. If you sit at a desk all day, you need this! #Kongsila #selfcare",
+ ph_cam:"📷 Camera",
+ ph_scan:"Scan me!",
+ ph_ai:"✨ AI is writing…",
+ ph_share:"Share to",
+ ph_copied:"✓ Caption copied! Opening the app…",
+ ph_voucher:"voucher",
+ ph_show:"Show this to staff",
+ ph_redeemed:"Redeemed!",
+ ph_pts:"+2 Kongsi pts",
+ stats:[[5, "", "platforms, one tap"], [3, "", "languages of AI captions"], [30, "s", "to register"], [0, "", "apps to download"]],
+ hero_caught:"Oyen caught",
+ hero_hint:"👆 Tap an icon to help Oyen!",
+ board_eb:"02 · Leaderboard",
+ game_eb:"03 · For shop owners",
+ plans_eb:"04 · Plans",
+ who_eb:"05 · Who's in",
+ faq_eb:"06 · FAQ",
+ game_h:"Kongsi <mark>Spin &amp; Win</mark>",
+ plans_h:"Pick your <mark>plan</mark>",
+ who_h:"Who's <mark>Kongsi-ing</mark>"
 },
 bm:{
  nav_how:"Macam mana",nav_board:"🏆 Carta",nav_game:"Spin & menang",nav_plans:"Pakej",nav_cta:"Saya ada kedai · Join",
@@ -639,7 +759,41 @@ bm:{
  pdpa_h:"Polisi privasi · PDPA",
  pdpa_body:"<p>Kongsila dikendalikan oleh Light Wave Creators Sdn. Bhd. dan mematuhi Akta Perlindungan Data Peribadi 2010 (PDPA) Malaysia.</p><ul><li>Apa kami kumpul: nama, telefon, email, nama kedai dan apa yang anda hantar di laman ini.</li><li>Kenapa: untuk hubungi anda, tunaikan hadiah spin dan sediakan servis Kongsila serta info berkaitan.</li><li>Kami tak jual data anda. Mesej promosi dihantar hanya dengan persetujuan anda.</li><li>Anda boleh lihat, betulkan atau padam data bila-bila masa: supportkongsila@gmail.com.</li></ul>",
  rulesdlg_h:"Peraturan Kongsi Podium",
- rules_full:["Musim ikut suku tahun kalendar (Jan–Mac, Apr–Jun, Jul–Sep, Okt–Dis), waktu Malaysia.","Hanya share dan redeem yang direkod sistem Kongsila dikira; kedai sahkan post sebenar sendiri.","Satu customer (ikut nombor telefon) kira sekali sehari untuk satu kedai, max 5 kali satu musim.","Mata Kongsi = share ×1 + redeem baucar ×2.","Kedai lawan dalam kategori industri sama je, ikut setting sistem Kongsila.","2026 Q4 ialah Founding Season: mata ditunjuk, tak ada ranking, tak ada hadiah. Ranking rasmi mula 2027 Q1.","Hadiah ditolak dari yuran suku seterusnya, bukan tunai; kedai mesti masih pelanggan aktif.","Kongsila boleh batalkan kelayakan kedai untuk musim itu jika ada tipu, pemalsuan atau salah laku.","Dengan join Kongsila, kedai setuju nama dan logo dipaparkan dalam carta ini."]
+ rules_full:["Musim ikut suku tahun kalendar (Jan–Mac, Apr–Jun, Jul–Sep, Okt–Dis), waktu Malaysia.","Hanya share dan redeem yang direkod sistem Kongsila dikira; kedai sahkan post sebenar sendiri.","Satu customer (ikut nombor telefon) kira sekali sehari untuk satu kedai, max 5 kali satu musim.","Mata Kongsi = share ×1 + redeem baucar ×2.","Kedai lawan dalam kategori industri sama je, ikut setting sistem Kongsila.","2026 Q4 ialah Founding Season: mata ditunjuk, tak ada ranking, tak ada hadiah. Ranking rasmi mula 2027 Q1.","Hadiah ditolak dari yuran suku seterusnya, bukan tunai; kedai mesti masih pelanggan aktif.","Kongsila boleh batalkan kelayakan kedai untuk musim itu jika ada tipu, pemalsuan atau salah laku.","Dengan join Kongsila, kedai setuju nama dan logo dipaparkan dalam carta ini."],
+ how_eb:"01 · Macam mana",
+ how_h:"Tiga langkah, customer <mark>post untuk anda</mark>",
+ how_sub:"Scroll ke bawah, tengok macam mana seorang customer Kongsi untuk kedai anda 👇",
+ f0_h:"Scan kad meja",
+ f0_p:"Customer scan guna kamera phone, daftar 30 saat. Tak payah download app.",
+ f1_h:"AI tulis caption",
+ f1_p:"AI tengok gambar customer dan tulis caption dalam Cina, English dan BM — setiap post lain.",
+ f2_h:"Satu tap, 5 platform",
+ f2_p:"小红书, Lemon8, TikTok, IG, FB — satu tap copy caption dan terus buka app.",
+ f3_h:"Terus dapat baucar",
+ f3_p:"Siap post, terus claim baucar. Customer happy, ada sebab nak datang balik.",
+ f4_h:"Datang balik redeem",
+ f4_p:"Staff scan untuk redeem — satu baucar sekali guna. Share jadi jualan betul, dan naikkan kedai anda dalam carta.",
+ type_cap:"Urut kaki paling best setakat ni 😴 Therapist memang pandai, tempat bersih dan selesa. Yang duduk lama kat ofis, wajib cuba! #Kongsila #selfcare",
+ ph_cam:"📷 Kamera",
+ ph_scan:"Scan saya!",
+ ph_ai:"✨ AI sedang tulis…",
+ ph_share:"Share ke",
+ ph_copied:"✓ Caption dah copy! Buka app…",
+ ph_voucher:"baucar",
+ ph_show:"Tunjuk pada staff",
+ ph_redeemed:"Berjaya redeem!",
+ ph_pts:"+2 mata Kongsi",
+ stats:[[5, "", "platform, satu tap"], [3, "", "bahasa caption AI"], [30, "s", "untuk daftar"], [0, "", "app perlu download"]],
+ hero_caught:"Oyen dapat",
+ hero_hint:"👆 Tap icon, tolong Oyen tangkap!",
+ board_eb:"02 · Carta",
+ game_eb:"03 · Untuk owner kedai",
+ plans_eb:"04 · Pakej",
+ who_eb:"05 · Siapa dah join",
+ faq_eb:"06 · Soalan",
+ game_h:"Kongsi <mark>Spin &amp; Menang</mark>",
+ plans_h:"Pilih <mark>pakej</mark> anda",
+ who_h:"Siapa dah <mark>Kongsi</mark>"
 }};
 let LANG=(()=>{const s=localStorage.getItem('kongsi_lang');if(s&&I18N[s])return s;const b=(navigator.language||'').toLowerCase();return b.startsWith('zh')?'zh':b.startsWith('ms')?'bm':'en'})();
 const T=k=>I18N[LANG][k];
@@ -654,7 +808,7 @@ function applyLang(){const d=I18N[LANG];document.documentElement.lang=LANG==='bm
  document.getElementById('rulesFull').innerHTML=d.rules_full.map(r=>`<li>${r}</li>`).join('');
  document.getElementById('faqList').innerHTML=d.faq.map(q=>`<details class="q"><summary>${q[0]}</summary><p>${q[1]}</p></details>`).join('');
  const wa=t=>`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(t)}`;
- document.getElementById('plans').innerHTML=[['Basic','RM599','plan_basic','btn-ink',''],['Standard','RM999','plan_std','btn-red','hot'],['Pro','RM1999','plan_pro','btn-ink','']].map(p=>`<div class="plan ${p[4]} reveal in">${p[4]?`<span class="badge">${d.hot}</span>`:''}<div class="pname">${p[0]}</div><div class="price">${p[1]}<small> ${d.per}</small></div><ul>${d[p[2]].map(x=>`<li>${x}</li>`).join('')}</ul><a class="btn ${p[3]}" href="${wa(d.wa_plan.replace('{p}',p[0]))}" target="_blank" rel="noopener">${d.learn}${p[0]}</a></div>`).join('');
+ document.getElementById('planGrid').innerHTML=[['Basic','RM599','plan_basic','btn-ink',''],['Standard','RM999','plan_std','btn-red','hot'],['Pro','RM1999','plan_pro','btn-ink','']].map(p=>`<div class="plan ${p[4]} reveal in">${p[4]?`<span class="badge">${d.hot}</span>`:''}<div class="pname">${p[0]}</div><div class="price">${p[1]}<small> ${d.per}</small></div><ul>${d[p[2]].map(x=>`<li>${x}</li>`).join('')}</ul><a class="btn ${p[3]}" href="${wa(d.wa_plan.replace('{p}',p[0]))}" target="_blank" rel="noopener">${d.learn}${p[0]}</a></div>`).join('');
  document.getElementById('partnerBtn').href=wa(d.wa_partner);document.getElementById('demoWa').href=wa(d.wa_demo);
  bindDialogs();tick();if(ROWS.length)render();drawWheel();if(lastPrize!==null)showPrize(lastPrize)}
 document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>{LANG=b.dataset.lang;applyLang()}));
@@ -691,9 +845,10 @@ function render(){const tabs=document.getElementById('tabs');const inds=[];ROWS.
  tabs.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{CUR_IND=b.dataset.ind;tabs.querySelectorAll('.tab').forEach(x=>x.setAttribute('aria-selected',x.dataset.ind===CUR_IND));show()}));
  show();document.getElementById('foundingNote').style.display=FOUNDING?'flex':'none';
  document.getElementById('upd').textContent=LIVE_AT?`${T('upd_live')} ${LIVE_AT} MYT`:T('upd_src')}
-function show(){const list=ROWS.filter(r=>r.industry===CUR_IND).sort((a,b)=>b.score-a.score);const pod=document.getElementById('podium');pod.classList.remove('in');
- [1,2,3].forEach(i=>{const el=pod.querySelector('.p'+i);const r=list[i-1];el.classList.toggle('empty',!r);el.querySelector('.avatar').textContent=r?initials(r.store):i;el.querySelector('.name').textContent=r?r.store:(i===1?T('empty1'):T('empty'));el.querySelector('.score').innerHTML=(r?r.score:'—')+`<small>${T('pts')}${r?` · ${r.shares} ${T('shares')} · ${r.redeems} ${T('redeems')}`:''}</small>`});
- requestAnimationFrame(()=>requestAnimationFrame(()=>pod.classList.add('in')));
+function show(){const list=ROWS.filter(r=>r.industry===CUR_IND).sort((a,b)=>b.score-a.score);const race=document.getElementById('podium');
+ const max=Math.max(1,...list.slice(0,3).map(r=>r.score));
+ [1,2,3].forEach(i=>{const el=race.querySelector('.l'+i);const r=list[i-1];el.classList.toggle('empty',!r);el.querySelector('.name').textContent=r?r.store:(i===1?T('empty1'):T('empty'));el.querySelector('.score').innerHTML=(r?r.score:'—')+`<small>${T('pts')}${r?` · ${r.shares} ${T('shares')} · ${r.redeems} ${T('redeems')}`:''}</small>`;el.dataset.x=r?Math.max(.08,r.score/max):0});
+ if(window.__race)window.__race();
  const ol=document.getElementById('ranklist');const rest=list.slice(3,10);
  ol.innerHTML=rest.length?rest.map((r,i)=>`<li><span class="r">${i+4}</span><span>${r.store}</span><span class="s">${r.score}</span></li>`).join(''):`<li class="empty">${T('rest_empty')}</li>`}
 async function load(){try{const res=await fetch(SHEET_ENDPOINT,{cache:'no-store'});const j=await res.json();const rows=normalise(j);if(!rows.length)throw 0;ROWS=rows;FOUNDING=/founding/i.test(rows[0].season||'');LIVE_AT=myt().toISOString().slice(0,16).replace('T',' ')}catch(e){ROWS=FALLBACK_ROWS}render()}
@@ -721,6 +876,115 @@ function confetti(){const c=document.getElementById('confetti');const x=c.getCon
 
 /* ===== boot ===== */
 applyLang();load();if(document.fonts)document.fonts.ready.then(drawWheel);
+
+/* ===== v5: Oyen chase ===== */
+(function(){
+const stage=document.getElementById('chase');if(!stage)return;
+const box=document.getElementById('chaseItems'),runner=document.getElementById('runner');
+const fA=runner.querySelector('.fA'),fB=runner.querySelector('.fB'),fC=runner.querySelector('.fC');
+const DEF=[['📕','小红书'],['🍋','Lemon8'],['🎵','TikTok'],['📸','Instagram'],['📘','Facebook'],['🎁',null]];
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+let W=0,H=0,items=[],next=0,last=0,acc=0,frame=0,leapUntil=0,leapH=0,visible=true,raf=0,spawnCD=0;
+const lbl=d=>d[1]===null?(I18N[LANG]&&I18N[LANG].hero_voucher)||'RM20':d[1];
+function size(){const r=stage.getBoundingClientRect();W=r.width;H=r.height}
+function ow(){return runner.getBoundingClientRect().width}
+function spawn(x){const d=DEF[next++%DEF.length];const el=document.createElement('div');el.className='sticker chase-st'+(d[1]===null?' red':'');const ic=document.createElement('i');ic.textContent=d[0];const sp=document.createElement('span');sp.textContent=lbl(d);el.append(ic,sp);box.appendChild(el);
+ const high=items.length%2===1;const it={el,d,x:x,yb:high?H*.30:H*.56,ph:Math.random()*6.28,rot:(Math.random()*10-5),dead:false};items.push(it);return it}
+function relabel(){items.forEach(it=>{const sp=it.el.querySelector('span');if(sp)sp.textContent=lbl(it.d)})}
+document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>setTimeout(relabel,0)));
+function catchIt(it,now){it.dead=true;bumpCaught();const r=it.el.getBoundingClientRect(),s=stage.getBoundingClientRect();const cx=r.left-s.left+r.width/2,cy=r.top-s.top+r.height/2;
+ it.el.classList.add('caught');it.el.style.transform+=' scale(1.35)';setTimeout(()=>it.el.remove(),500);
+ const p=document.createElement('div');p.className='plus1';p.textContent='+1 Kongsi!';p.style.left=(cx-60)+'px';p.style.top=(cy-50)+'px';stage.appendChild(p);setTimeout(()=>p.remove(),1150);
+ ['✨','⭐','💛','✨','🧡'].forEach((e,i)=>{const k=document.createElement('div');k.className='spark';k.textContent=e;const a=i/5*6.28;k.style.left=cx+'px';k.style.top=cy+'px';k.style.setProperty('--dx',Math.cos(a)*70+'px');k.style.setProperty('--dy',Math.sin(a)*60-20+'px');stage.appendChild(k);setTimeout(()=>k.remove(),950)});
+ leapUntil=now+520;leapH=it.yb<H*.45?H*.20:H*.07}
+function step(now){raf=requestAnimationFrame(step);if(!visible)return;if(!last)last=now;let dt=Math.min(.05,(now-last)/1000);last=now;
+ const speed=Math.max(70,W*.16),o=ow(),reachX=W*.07+o*.78;
+ spawnCD-=dt;const far=items.reduce((m,it)=>it.dead?m:Math.max(m,it.x),-1e9);
+ if(spawnCD<=0&&far<W-Math.max(170,W*.36)){spawn(W+20);spawnCD=.4}
+ items.forEach(it=>{if(it.dead)return;it.x-=speed*dt;it.ph+=dt*5;const y=it.yb+Math.sin(it.ph)*8;it.el.style.transform=`translate(${it.x}px,${y}px) rotate(${it.rot+Math.sin(it.ph*.8)*4}deg)`;
+  if(it.x<reachX&&now>leapUntil-300)catchIt(it,now)});
+ items=items.filter(it=>!it.dead||it.el.isConnected);items=items.filter(it=>!it.dead);
+ const leaping=now<leapUntil;acc+=dt;if(!leaping&&acc>.14){acc=0;frame^=1}
+ fA.classList.toggle('on',!leaping&&frame===0);fB.classList.toggle('on',!leaping&&frame===1);fC.classList.toggle('on',leaping);
+ const lp=leaping?Math.sin((1-(leapUntil-now)/520)*Math.PI):0;const bob=leaping?0:Math.abs(Math.sin(now/140*Math.PI/1.0))*-7;
+ runner.style.transform=`translateY(${-lp*leapH+bob}px)`;runner.style.setProperty('--sh',(1-lp*.45).toFixed(2))}
+function start(){size();if(reduce){spawn(W*.45);spawn(W*.8);items.forEach(it=>{it.el.style.transform=`translate(${it.x}px,${it.yb}px) rotate(${it.rot}deg)`});return}
+ spawn(W*.62);spawn(W*1.02);raf=requestAnimationFrame(step)}
+window.addEventListener('resize',()=>{const oldW=W;size();if(oldW&&W)items.forEach(it=>{it.x*=W/oldW;it.yb*=1})});
+new IntersectionObserver(es=>es.forEach(e=>{visible=e.isIntersecting;last=0}),{threshold:0}).observe(stage);
+document.addEventListener('visibilitychange',()=>{visible=!document.hidden;last=0});
+let caught=0;const cn=document.getElementById('caughtN'),cb=document.getElementById('caughtBox');
+function bumpCaught(){caught++;if(!cn)return;cn.textContent=caught;cb.classList.remove('bump');void cb.offsetWidth;cb.classList.add('bump')}
+box.addEventListener('pointerdown',e=>{const el=e.target.closest('.chase-st');if(!el)return;const it=items.find(x=>x.el===el&&!x.dead);if(it){leapUntil=0;catchIt(it,performance.now())}});
+const hero=document.querySelector('.hero');if(matchMedia('(pointer:fine)').matches)hero.addEventListener('pointermove',e=>{const r=hero.getBoundingClientRect();stage.style.setProperty('--mx',((e.clientX-r.left)/r.width*2-1).toFixed(3));stage.style.setProperty('--my',((e.clientY-r.top)/r.height*2-1).toFixed(3))});
+if(document.readyState==='complete')start();else window.addEventListener('load',start);
+})();
+
+/* ===== v6: race leaderboard ===== */
+(function(){
+const race=document.getElementById('podium');if(!race)return;let seen=false,timers=[];
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function countUp(sc,dur){const b=sc.firstChild;if(!b||b.nodeType!==3)return;const n=parseInt(b.textContent,10);if(isNaN(n))return;const t0=performance.now();(function tk(t){const k=Math.min(1,(t-t0)/dur);b.textContent=Math.round(n*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(tk)})(t0)}
+function fireworks(rc){const c=race.querySelector('.fw');const R=c.getBoundingClientRect();c.width=R.width;c.height=R.height;const x=c.getContext('2d');const rr=rc.getBoundingClientRect();const bx=rr.left-R.left+rr.width/2,by=rr.top-R.top+10;const P=[];const C=['#FC593F','#FCD094','#E8751E','#F9E9D2','#DB2319','#FFFFFF'];
+ function burst(px,py,n){for(let i=0;i<n;i++){const a=Math.random()*6.283,s=1.5+Math.random()*5.5;P.push({x:px,y:py,vx:Math.cos(a)*s,vy:Math.sin(a)*s-1,l:55+Math.random()*40,c:C[i%C.length],r:1.8+Math.random()*2})}}
+ burst(bx,by,80);setTimeout(()=>burst(Math.max(40,bx-160),by-20,60),300);setTimeout(()=>burst(Math.min(c.width-40,bx+40),Math.max(20,by-70),60),600);setTimeout(()=>burst(c.width*.45,by+10,60),900);
+ let t=0;(function fr(){x.clearRect(0,0,c.width,c.height);P.forEach(p=>{if(p.l<=0)return;p.vx*=.97;p.vy=p.vy*.97+.07;p.x+=p.vx;p.y+=p.vy;p.l--;x.globalAlpha=Math.min(1,p.l/30);x.fillStyle=p.c;x.beginPath();x.arc(p.x,p.y,p.r,0,6.283);x.fill()});x.globalAlpha=1;if(++t<240)requestAnimationFrame(fr);else x.clearRect(0,0,c.width,c.height)})()}
+function run(){timers.forEach(clearInterval);timers=[];
+ race.querySelectorAll('.lane').forEach((l,li)=>{const rc=l.querySelector('.racer'),fa=rc.querySelector('.fA'),fb=rc.querySelector('.fB'),fc=rc.querySelector('.fC');const x=+l.dataset.x||0;l.classList.remove('won');
+  rc.style.transition='none';rc.style.left='0px';fa.classList.add('on');fb.classList.remove('on');fc.classList.remove('on');void rc.offsetWidth;
+  if(l.classList.contains('empty')||x<=0)return;
+  const target=`calc(${x.toFixed(3)} * (100% - var(--rw)))`;
+  if(reduce){rc.style.left=target;if(l.classList.contains('l1'))l.classList.add('won');return}
+  const dur=Math.round(1200+2300*x);countUp(l.querySelector('.score'),dur);
+  setTimeout(()=>{rc.style.transition=`left ${dur}ms cubic-bezier(.4,.05,.3,1)`;rc.style.left=target},120+li*90);
+  let f=0;const t=setInterval(()=>{f^=1;fa.classList.toggle('on',!f);fb.classList.toggle('on',!!f)},120);timers.push(t);
+  setTimeout(()=>{clearInterval(t);fb.classList.remove('on');if(l.classList.contains('l1')){fa.classList.remove('on');fc.classList.add('on');l.classList.add('won');fireworks(rc);setTimeout(()=>{fc.classList.remove('on');fa.classList.add('on')},2300)}else fa.classList.add('on')},dur+140+li*90)})}
+window.__race=()=>{if(seen)run()};
+new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting&&!seen){seen=true;run()}}),{threshold:.45}).observe(race);
+})();
+
+/* ===== v6: hero headline letters ===== */
+function splitHero(){const hero=document.querySelector('.hero');document.querySelectorAll('.hero h1 .l1,.hero h1 .l2').forEach((el,li)=>{let i=li*7;const words=el.textContent.split(' ');el.textContent='';let box=el;if(li===1){box=el.appendChild(document.createElement('span'));box.className='hlm'}words.forEach((w,wi)=>{if(wi)box.appendChild(document.createTextNode(' '));const ws=box.appendChild(document.createElement('span'));ws.className='w';Array.from(w).forEach(c=>{const sp=ws.appendChild(document.createElement('span'));sp.className='ch';sp.style.setProperty('--i',i++);sp.textContent=c})})});hero.classList.remove('go');setTimeout(()=>hero.classList.add('go'),950)}
+splitHero();
+
+/* ===== v6: stats strip ===== */
+let statsDone=false;
+function renderStats(anim){const s=document.getElementById('stats');if(!s)return;s.textContent='';T('stats').forEach(x=>{const d=s.appendChild(document.createElement('div'));d.className='stat';const b=d.appendChild(document.createElement('b'));b.textContent=(anim?0:x[0])+x[1];const sp=d.appendChild(document.createElement('span'));sp.textContent=x[2];
+ if(anim){const n=x[0],sf=x[1],t0=performance.now();(function tk(t){const k=Math.min(1,(t-t0)/1400);b.textContent=Math.round(n*(1-Math.pow(1-k,3)))+sf;if(k<1)requestAnimationFrame(tk)})(t0)}})}
+renderStats(false);
+new IntersectionObserver((es,o)=>es.forEach(e=>{if(e.isIntersecting&&!statsDone){statsDone=true;renderStats(true);o.disconnect()}}),{threshold:.5}).observe(document.getElementById('stats'));
+
+/* ===== v6: scroll film + marquee + parallax ===== */
+(function(){
+const NS='http://www.w3.org/2000/svg';
+document.querySelectorAll('svg[data-qr]').forEach(sv=>{let a=7;const r=()=>{a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296};let d='';const N=25;const F=(x,y)=>{for(let i=0;i<7;i++)for(let j=0;j<7;j++)if(i==0||i==6||j==0||j==6||(i>1&&i<5&&j>1&&j<5))d+='M'+(x+i)+' '+(y+j)+'h1v1h-1z'};F(0,0);F(N-7,0);F(0,N-7);
+ for(let i=0;i<N;i++)for(let j=0;j<N;j++){if((i<8&&j<8)||(i>=N-8&&j<8)||(i<8&&j>=N-8))continue;if(r()<.48)d+='M'+i+' '+j+'h1v1h-1z'}
+ const rc=document.createElementNS(NS,'rect');[['x',-2],['y',-2],['width',29],['height',29],['rx',2],['fill','#fff']].forEach(q=>rc.setAttribute(q[0],q[1]));const pa=document.createElementNS(NS,'path');pa.setAttribute('d',d);pa.setAttribute('fill','#02271F');sv.append(rc,pa)});
+{const m=document.getElementById('megaTrack');if(m){const kids=[...m.childNodes];for(let k=0;k<3;k++)kids.forEach(n=>m.appendChild(n.cloneNode(true)))}}
+const film=document.getElementById('film'),steps=film?film.querySelectorAll('.fs'):[],dots=document.querySelectorAll('#filmDots i'),tt=document.getElementById('typeText'),mt=document.getElementById('megaTrack');
+const kbs=[...document.querySelectorAll('.kb-host > .kb, .film > .kb')];
+let ph=-1,ticking=false;
+function upd(){ticking=false;const vh=innerHeight;
+ if(film){const r=film.getBoundingClientRect();const total=Math.max(1,r.height-(vh-72));const p=Math.min(1,Math.max(0,(72-r.top)/total));const pp=p*5;const n=Math.min(4,Math.floor(pp));
+  if(n!==ph){ph=n;film.dataset.ph=n;steps.forEach((s,i)=>{s.classList.toggle('on',i===n);s.classList.toggle('past',i<n)})}
+  dots.forEach((d,i)=>d.style.setProperty('--p',Math.min(1,Math.max(0,pp-i)).toFixed(3)));
+  const full=Array.from(T('type_cap'));const k=Math.min(1,Math.max(0,(pp-1)/.75));tt.textContent=full.slice(0,Math.round(full.length*k)).join('')}
+ if(mt){const half=mt.scrollWidth/2;mt.style.transform=`translate3d(${-((scrollY*.45)%half)}px,0,0)`}
+ kbs.forEach(el=>{const host=el.parentElement.getBoundingClientRect();if(host.bottom<0||host.top>vh)return;const s=parseFloat(el.style.getPropertyValue('--s'))||50;el.style.translate=`0 ${((host.top+host.height/2-vh/2)*-(s/260)).toFixed(1)}px`})}
+function q(){if(!ticking){ticking=true;requestAnimationFrame(upd)}}
+addEventListener('scroll',q,{passive:true});addEventListener('resize',q);upd();
+document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>setTimeout(()=>{splitHero();renderStats(false);ph=-1;upd()},0)));
+})();
+
+/* ===== v6: paw trail + card tilt ===== */
+(function(){
+if(!matchMedia('(pointer:fine)').matches||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+let lx=-999,ly=-999,side=1;
+addEventListener('pointermove',e=>{const dx=e.clientX-lx,dy=e.clientY-ly;if(dx*dx+dy*dy<4900)return;const a=Math.atan2(dy,dx);lx=e.clientX;ly=e.clientY;side=-side;
+ const p=document.createElement('i');p.className='paw';p.style.left=(e.clientX+Math.cos(a+Math.PI/2)*7*side)+'px';p.style.top=(e.clientY+Math.sin(a+Math.PI/2)*7*side)+'px';p.style.rotate=(a*180/Math.PI+90)+'deg';document.body.appendChild(p);setTimeout(()=>p.remove(),1400)},{passive:true});
+let tc=null;
+document.addEventListener('pointermove',e=>{const c=e.target.closest&&e.target.closest('.plan,.case');if(tc&&tc!==c){tc.style.transform='';tc=null}if(!c)return;tc=c;const r=c.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`perspective(900px) rotateX(${(-y*8).toFixed(2)}deg) rotateY(${(x*10).toFixed(2)}deg)${c.classList.contains('hot')?' translateY(-10px)':''}`},{passive:true});
+})();
 </script>
 <script src="https://my.chatbees.io/widget.js" data-widget="53273692" async></script>
 </body>
