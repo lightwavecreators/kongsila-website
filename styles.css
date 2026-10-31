@@ -1,7 +1,7 @@
 :root{
   --ink:#02271F; --cream:#F9E9D2; --red:#DB2319; --coral:#FC593F; --orange:#E8751E; --peach:#FCD094;
   --white:#FFFDF9; --ink-70:rgba(2,39,31,.7); --ink-15:rgba(2,39,31,.15);
-  --display:'Baloo 2',cursive; --body:'Plus Jakarta Sans','Noto Sans SC',system-ui,sans-serif; --sc:'Noto Sans SC','Plus Jakarta Sans',sans-serif;
+  --display:'Baloo 2','Noto Sans SC',system-ui,sans-serif; --body:'Plus Jakarta Sans','Noto Sans SC',system-ui,sans-serif; --sc:'Noto Sans SC','Plus Jakarta Sans',sans-serif;
   --r-btn:999px; --r-card:24px; --gutter:clamp(16px,4vw,48px); --max:1180px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
