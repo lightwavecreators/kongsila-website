@@ -242,7 +242,7 @@ dialog .close{margin-top:18px}
 @keyframes wave{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(5deg) translateY(-6px)}}
 @media(max-width:900px){.final .oyen-wave{position:static;display:block;margin:28px auto 0;height:170px}}
 .faq h2 .oyen-peek{height:84px;vertical-align:middle;margin-left:10px;display:inline-block;animation:float 3.6s ease-in-out infinite}
-.cases .oyen-love{height:120px;float:right;margin:-30px 0 0 10px;animation:float 4.4s ease-in-out infinite}
+.cases .oyen-love{height:120px;float:right;margin:-30px 0 0 10px;animation:float 4.4s ease-in-out infinite} .cases .oyen-case{width:auto;height:118px;margin-top:-34px} .case:nth-child(2) .oyen-case{animation-delay:-1.4s} .case:nth-child(3) .oyen-case{animation-delay:-2.8s}
 
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
 
